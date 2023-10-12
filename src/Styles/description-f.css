@@ -1,0 +1,74 @@
+.description {
+  width: 100%;
+}
+.description .title-des {
+  text-align: center;
+  color: #2e2e2e;
+  font-size: 1.8em;
+}
+.container-description {
+  width: 90%;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+}
+.item-description h2 {
+  color: #4e1f6e;
+  font-size: 1.5em;
+}
+.item-description h3 {
+  color: #4e1f6e;
+  font-size: 1.3em;
+}
+.item-description p {
+  color: #2e2e2e;
+  font-size: 0.9em;
+}
+.list {
+  color: #2e2e2e !important;
+  padding-left: 20px !important;
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .description {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .description .title-des {
+    text-align: center;
+    color: #2e2e2e;
+    font-size: 2.5em;
+  }
+  .container-description {
+    width: 90%;
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .item-description:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .item-description h2 {
+    color: #4e1f6e;
+    font-size: 2.7em;
+  }
+  .item-description h3 {
+    color: #4e1f6e;
+    font-size: 2em;
+  }
+  .item-description p {
+    color: #2e2e2e;
+    font-size: 1.3em;
+  }
+  .list {
+    color: #2e2e2e !important;
+    padding-left: 30px !important;
+    font-size: 1.3em;
+  }
+}

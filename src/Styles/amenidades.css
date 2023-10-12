@@ -1,0 +1,125 @@
+.amenidades {
+  width: 100%;
+  background-color: #2e2e2e;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+.amenidades h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.container-amenidades {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.item-amenidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #b18904;
+  padding: 20px;
+}
+.item-amenidades:nth-child(1) {
+  border-bottom-right-radius: 12px;
+}
+.item-amenidades:nth-child(2) {
+  border-bottom-left-radius: 12px;
+}
+.item-amenidades:nth-child(3) {
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.item-amenidades:nth-child(4) {
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.item-amenidades:nth-child(5) {
+  border-top-right-radius: 12px;
+}
+.item-amenidades:nth-child(6) {
+  border-top-left-radius: 12px;
+}
+.item-amenidades img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.item-amenidades h2 {
+  font-size: 1.1em;
+  color: aliceblue;
+  font-weight: 300;
+}
+.amenidades a {
+  display: block;
+  margin: 20px auto 5px auto;
+  width: 170px;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  color: #2e2e2e;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 1.1em;
+  transition: 1s;
+}
+.amenidades a:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
+@media (min-width: 768px) {
+  .amenidades a {
+    display: block;
+    margin: 30px auto 5px auto;
+    width: 200px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    color: #2e2e2e;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 1.5em;
+  }
+  .amenidades {
+    width: 100%;
+    background-color: #2e2e2e;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .amenidades h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .container-amenidades {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+  }
+  .item-amenidades {
+    background-color: #b18904;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .item-amenidades img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+  .item-amenidades h2 {
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 300;
+  }
+}

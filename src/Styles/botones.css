@@ -1,0 +1,21 @@
+.botones {
+  width: 100%;
+}
+.botones a {
+  position: fixed;
+  right: 0;
+  bottom: 2vh;
+  z-index: 998;
+}
+.botones a img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .botones a img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+}
