@@ -96,7 +96,7 @@ const Navbar = () => {
           <div className="container-descktop">
             <div className="nav-link">
               <Link to="/" onClick={() => setIsNavbar(!isNavbar)}>
-                Home
+                Inicio
               </Link>
             </div>
 

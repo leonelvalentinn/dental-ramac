@@ -38,7 +38,7 @@
 }
 
 .menu-top {
-  background-color: black;
+  background-color: #20649c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,7 @@
   font-size: 1.3em;
 }
 .menu-middle {
-  background-color: #2e2e2e;
+  background-color: #1c9bbc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +96,7 @@
   font-size: 0.7em;
 }
 .menu-down {
-  background-color: #00ffff;
+  background-color: #1cb3cb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +218,7 @@
   .btn-header-contacto {
     display: inline-block;
     width: 170px;
-    background-color: #b18904;
+    background-color: #20649c;
     color: #fff;
     text-align: center;
     text-decoration: none;
