@@ -20,10 +20,10 @@
 }
 .item-amenidades {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-color: #b18904;
+  background-color: #1c9bbc;
   padding: 20px;
 }
 .item-amenidades:nth-child(1) {
@@ -50,6 +50,7 @@
   width: 45px;
   height: 45px;
   object-fit: cover;
+  border-radius: 10px;
 }
 .item-amenidades h2 {
   font-size: 1.1em;
@@ -103,22 +104,22 @@
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
   }
   .item-amenidades {
-    background-color: #b18904;
+    background-color: #1c9bbc;
     padding: 20px;
     border-radius: 12px;
   }
 
   .item-amenidades img {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
   }
   .item-amenidades h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #fff;
     font-weight: 300;
   }

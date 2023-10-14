@@ -1,8 +1,8 @@
-.container-video {
+.video-escritorio {
   display: none;
 }
 
-@media (min-width: 768px) {
+
   .container-video {
     width: 100%;
     position: relative;
@@ -53,5 +53,13 @@
     background-color: #fff;
     transition: 1s;
     color: #000;
+  }
+
+@media (min-width: 768px) {
+  .video-mobile {
+    display: none;
+  }
+  .video-escritorio {
+    display: block;
   }
 }

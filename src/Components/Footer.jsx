@@ -8,53 +8,40 @@ const Footer = () => {
     <div className="footer">
       <div className="container-footer">
         <div className="item-footer">
-          <p>
-            ¿Buscas un lugar para tu hogar? ¡Tenemos justo lo que necesitas!
-          </p>
+          <div>
+            <h3>Ubicación</h3>
+            <p>
+            Escocia 11, Parque San Andrés, Coyoacán, <br /> Ciudad de México, CDMX
+            </p>
+          </div>
+          <div>
+            <h3>Horario</h3>
+            <p>
+            Lunes a Viernes de 9:30 a 2:00pm 4:00 a 7:00 pm <br />
+            Sábados de 9:00 a 2:00 pm
+            </p>
+          </div>
         </div>
         <div className="item-footer">
-          <h2>Contáctanos</h2>
-          <form action="">
-            <div className="input-container">
-              <input type="text" placeholder="Nombre" />
-            </div>
-            <div className="input-container">
-              <input type="text" placeholder="Apellido" />
-            </div>
-            <div className="input-container">
-              <input type="email" placeholder="Correo electronico" />
-            </div>
-            <div className="input-container">
-              <input type="text" placeholder="Teléfono o Celular" />
-            </div>
-            <div className="input-container">
-              <select name="metraje" id="lang">
-                <option value="200mts">200 metros</option>
-                <option value="275mts">275 metros</option>
-                <option value="300mts">300 metros</option>
-                <option value="325mts">325 metros</option>
-                <option value="350mts">350 metros</option>
-                <option value="400mts">400 metros</option>
-                <option value="800mts">800 metros</option>
-              </select>
-            </div>
-            <div className="input-container">
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div className="input-container submit">
-              <input type="submit" />
-            </div>
-          </form>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4924426267685!2d-99.14818509031076!3d19.34781874330969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd2d35a6713%3A0x1e1f230d9bd5da44!2sDental%20Ramac!5e0!3m2!1ses-419!2smx!4v1697240032987!5m2!1ses-419!2smx" 
+          width="600" 
+          height="450" 
+          style={{ border: 0 }}
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         </div>
       </div>
       <div className="footer-footer">
         <div className="sub-item-footer">
           <h2>Menu</h2>
           <div className="menu-footer">
-            <Link to="/">Home</Link>
+            <Link to="/">Inicio</Link>
             <Link to="/nosotros">Nosotros</Link>
-            <Link to="/desarrollo">Desarrollo</Link>
-            <Link to="/financiamiento">Financiamiento</Link>
+            <Link to="/desarrollo">Servicios</Link>
+            <Link to="/financiamiento">Promociones</Link>
           </div>
         </div>
         <div className="sub-item-footer">
@@ -79,8 +66,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-finaly">
-        <p>© 2023 Todos los derechos reservados Regal Residences.</p>
-        <p>Desarrollado por Agencia Inspiración </p>
+        <p>© 2023 Todos los derechos reservados Dental Ramac.</p>
+        <p>Desarrollado por Agencia Dentarios </p>
       </div>
     </div>
   );

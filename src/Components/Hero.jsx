@@ -9,10 +9,10 @@ import "swiper/css/effect-fade";
 
 // import required modules
 import { Autoplay, EffectFade } from "swiper";
-import Slider1 from "../assets/slider-1.jpg";
-import Slider2 from "../assets/slider5.jpeg";
-import Slider3 from "../assets/slider-3.jpg";
-import Slider4 from "../assets/slider-4.jpg";
+import Slider1 from "../assets/render5.jpg";
+import Slider2 from "../assets/render1.jpg";
+import Slider3 from "../assets/render3.jpg";
+import Slider4 from "../assets/render4.jpg";
 import Slider5 from "../assets/slider-movil-1.jpg";
 import Slider6 from "../assets/img10.jpeg";
 import Slider7 from "../assets/slider-movil-3.jpg";
@@ -42,7 +42,7 @@ const Hero = () => {
           <img src={Slider5} alt="" className="img-movil" />
           <div className="container-text">
             <div className="text-slider">
-              <p>¡Terrenos en Tequesquitengo!</p>
+              <p>El día más malgastado de todos es sin una sonrisa. <small>(Edward Estlin Cummings)</small></p>
               <ButtonContact />
             </div>
           </div>
@@ -52,7 +52,7 @@ const Hero = () => {
           <img src={Slider6} alt="" className="img-movil" />
           <div className="container-text">
             <div className="text-slider">
-              <p>¡Compra tu terreno, Construye tu futuro!</p>
+              <p>Un día sin sonreír es un día perdido. <small>(Charlie Chaplin)</small></p>
               <ButtonContact />
             </div>
           </div>
@@ -62,7 +62,7 @@ const Hero = () => {
           <img src={Slider7} alt="" className="img-movil" />
           <div className="container-text">
             <div className="text-slider">
-              <p>Diseñado para crear momentos unicos.</p>
+              <p>Sonreír es definitivamente uno de los mejores y más bellos remedios. <small>(Paulo Coelho)</small></p>
               <ButtonContact />
             </div>
           </div>
@@ -72,7 +72,7 @@ const Hero = () => {
           <img src={Slider8} alt="" className="img-movil" />
           <div className="container-text">
             <div className="text-slider">
-              <p>Diseños de vanguardia para vivir con estilo y comodidad</p>
+              <p>La sonrisa es una curva que lo endereza todo. <small>(Phyllis Diller)</small></p>
               <ButtonContact />
             </div>
           </div>

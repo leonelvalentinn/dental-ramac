@@ -3,6 +3,9 @@
   height: 700px;
   position: relative;
 }
+small {
+  font-size: 10px;
+}
 .img-slider {
   display: none;
 }
@@ -42,6 +45,9 @@
 }
 
 @media (min-width: 768px) {
+  small {
+    font-size: 13px;
+  }
   .img-slider {
     display: block;
     width: 100%;

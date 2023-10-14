@@ -15,7 +15,7 @@ const Home = () => {
       <Amenidades />
       <RenderFotos />
       <GaleryHome />
-      <FondoMobile />
+
       <VideoGround />
     </div>
   );

@@ -10,6 +10,12 @@
   margin-bottom: 12px;
   padding-bottom: 15px;
 }
+.galery h3 {
+  text-align: center;
+  color: #2e2e2e;
+  font-size: 1.4em;
+  margin-top: 12px;
+}
 .container-galery {
   width: 90%;
   display: grid;
@@ -21,14 +27,14 @@
     "item3 item4"
     "item7 item8"
     "item9 item10"
-    "item11 item12";
+    ;
   gap: 12px;
   margin: 20px auto;
 }
 .item-galery button {
   display: block;
   width: 170px;
-  background-color: #2e2e2e;
+  background-color: #0b518a;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -154,8 +160,7 @@
     grid-template-areas:
       "item1 item2 item3"
       "item5 item6 item7"
-      "item4 item11 item12"
-      "item8 item9 item10";
+      "item4 item8 item9";
     gap: 12px;
     margin: 12px auto;
   }

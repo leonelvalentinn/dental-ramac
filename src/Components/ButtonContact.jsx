@@ -5,7 +5,7 @@ function ButtonContact() {
   return (
     <div className="container-button">
       <a
-        href="https://api.whatsapp.com/send?phone=525630220591"
+        href="https://api.whatsapp.com/send?phone=525544754479"
         target="_blank"
         className="button-contact"
       >

@@ -7,7 +7,7 @@
   transition: 1s;
 }
 .navbar.back {
-  background-color: #000;
+  background-color: #0e3352;
   transition: 1s;
 }
 .container-navbar {
@@ -218,7 +218,7 @@
   .btn-header-contacto {
     display: inline-block;
     width: 170px;
-    background-color: #20649c;
+    background-color: #3488ce;
     color: #fff;
     text-align: center;
     text-decoration: none;

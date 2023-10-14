@@ -6,7 +6,7 @@ const Botones = () => {
   return (
     <div className="botones">
       <a
-        href="https://api.whatsapp.com/send?phone=525630220591"
+        href="https://api.whatsapp.com/send?phone=525544754479"
         target="_blank"
       >
         <img src={Whats} alt="" />

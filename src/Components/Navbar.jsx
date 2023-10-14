@@ -44,33 +44,25 @@ const Navbar = () => {
               Nosotros
             </Link>
             <Link to="/amenidades" onClick={() => handleClick(!isOpen)}>
-              Amenidades
+              Servicios
             </Link>
             <Link to="/financiamiento" onClick={() => handleClick(!isOpen)}>
-              Financiamiento
+              Promociones
             </Link>
           </div>
           <div className={`menu-middle ${isOpen ? "left" : ""}`}>
             <h2>Contáctanos</h2>
             <div className="menu-middle-submenu">
               <a
-                href="https://api.whatsapp.com/send?phone=527341373382"
+                href="https://api.whatsapp.com/send?phone=525544754479"
                 target="_blank"
               >
                 <i class="fa-brands fa-whatsapp"></i>
                 <p>Información</p>
               </a>
-              <a href="tel:5536697725" target="_blank">
+              <a href="tel:5554041962" target="_blank">
                 <i className="fa-solid fa-phone"></i>
-                <p>5536697725</p>
-              </a>
-              <a href="tel:5581459476" target="_blank">
-                <i className="fa-solid fa-phone"></i>
-                <p>5581459476</p>
-              </a>
-              <a href="tel:5630220591" target="_blank">
-                <i className="fa-solid fa-phone"></i>
-                <p>5630220591</p>
+                <p>5554041962</p>
               </a>
             </div>
           </div>
@@ -105,15 +97,15 @@ const Navbar = () => {
             </div>
 
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              <Link to="/amenidades">Amenidades</Link>
+              <Link to="/amenidades">Servicios</Link>
             </div>
 
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              <Link to="/financiamiento">Financiamiento</Link>
+              <Link to="/financiamiento">Promociones</Link>
             </div>
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              <a href="tel:5630220591" className="btn-header-contacto">
-                5630220591
+              <a href="tel:5554041962" className="btn-header-contacto">
+                5554041962
               </a>
             </div>
           </div>

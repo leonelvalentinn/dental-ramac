@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "../Styles/galeryHome.css";
-import foto1 from "../assets/slider-1.jpg";
-import foto2 from "../assets/galery3.jpg";
-import foto3 from "../assets/galery4.jpg";
-import foto4 from "../assets/zapata.jpg";
-import foto5 from "../assets/jirafa.jpg";
-import foto6 from "../assets/kayac.jpg";
-import foto7 from "../assets/grutas.jpg";
+import foto1 from "../assets/odontologia-preventiva.jpg";
+import foto2 from "../assets/cirugia-bucal.jpg";
+import foto3 from "../assets/implantologia.jpg";
+import foto4 from "../assets/rehabilitacion.jpg";
+import foto5 from "../assets/endodoncia.jpg";
+import foto6 from "../assets/ortodoncia.jpg";
+import foto7 from "../assets/odontopediatria.jpg";
 import foto8 from "../assets/parachute.jpg";
 import foto9 from "../assets/zona.jpg";
-import foto10 from "../assets/tepoztlan.jpg";
-import foto12 from "../assets/comida.jpg";
+import foto10 from "../assets/patologia-bucal.jpg";
+import foto12 from "../assets/laboratorio.png";
 import foto13 from "../assets/img3.jpg";
 import ButtonContact from "../Components/ButtonContact";
 
@@ -98,7 +98,7 @@ const GaleryHome = () => {
         <h2 id="title-modal">${texto.title}<h2/>
         <p id="texto-modal">${texto.info}<p/>
         <a
-            href="https://api.whatsapp.com/send?phone=525630220591"
+            href="https://api.whatsapp.com/send?phone=525544754479"
             target="_blank"
             className="button-contact"
           >
@@ -110,81 +110,93 @@ const GaleryHome = () => {
 
   return (
     <div className="galery">
-      <h2>Atracciones y Lugares de interes</h2>
+      <h2> Servicios y Especialidades</h2>
       <div className="container-galery">
         <div className="item-galery">
+          <h3>Odontología Preventiva</h3>
           <img src={foto1} alt="" />
           <button className="btn-mas" id="1" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
-          <img src={foto2} alt="" />
+        <h3>Rehabilitación Oral</h3>
+          <img src={foto4} alt="" />
           <button className="btn-mas" id="2" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
+        <h3>Implantología </h3>
           <img src={foto3} alt="" />
           <button className="btn-mas" id="3" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
-          <img src={foto4} alt="" />
+        <h3>Cirugía Bucal</h3>
+          <img src={foto2} alt="" />
           <button className="btn-mas" id="4" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
+        <h3>Endodoncia </h3>
           <img src={foto5} alt="" />
           <button className="btn-mas" id="5" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
+        <h3>Ortodoncia </h3>
           <img src={foto6} alt="" />
           <button className="btn-mas" id="6" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
+        <h3>Odontopediatría </h3>
           <img src={foto7} alt="" />
           <button className="btn-mas" id="7" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
-          <img src={foto13} alt="" />
+          <h3>Patología Bucal</h3>
+          <img src={foto10} alt="" />
           <button className="btn-mas" id="8" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
-          <img src={foto8} alt="" />
+        <h3>Laboratorio Dental</h3>
+          <img src={foto12} alt="" />
           <button className="btn-mas" id="9" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
-        <div className="item-galery">
+        {/*<div className="item-galery">
+        <h3>Odontología Preventiva</h3>
           <img src={foto12} alt="" />
           <button className="btn-mas" id="10" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
+        <h3>Odontología Preventiva</h3>
           <img src={foto9} alt="" />
           <button className="btn-mas" id="11" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
+          <h3>Odontología Preventiva</h3>
           <img src={foto10} alt="" />
           <button className="btn-mas" id="12" onClick={(e) => openModal(e)}>
             Ver más
           </button>
-        </div>
-      </div>
+        </div>*/}
+      </div> 
       <div
         className={`modal-atractions ${isModal ? "popup" : ""} `}
         id="modal-atractions"
