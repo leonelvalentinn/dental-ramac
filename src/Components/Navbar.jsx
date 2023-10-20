@@ -40,13 +40,13 @@ const Navbar = () => {
             <Link to="/" onClick={() => handleClick(!isOpen)}>
               Inicio
             </Link>
-            <Link to="/nosotros" onClick={() => handleClick(!isOpen)}>
+            <Link to="/" onClick={() => handleClick(!isOpen)}>
               Nosotros
             </Link>
-            <Link to="/amenidades" onClick={() => handleClick(!isOpen)}>
+            <Link to="/" onClick={() => handleClick(!isOpen)}>
               Servicios
             </Link>
-            <Link to="/financiamiento" onClick={() => handleClick(!isOpen)}>
+            <Link to="/promociones" onClick={() => handleClick(!isOpen)}>
               Promociones
             </Link>
           </div>
@@ -93,15 +93,15 @@ const Navbar = () => {
             </div>
 
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              <Link to="/nosotros">Nosotros</Link>
+              <Link to="/">Nosotros</Link>
             </div>
 
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              <Link to="/amenidades">Servicios</Link>
+              <Link to="/">Servicios</Link>
             </div>
 
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              <Link to="/financiamiento">Promociones</Link>
+              <Link to="/promociones">Promociones</Link>
             </div>
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
               <a href="tel:5554041962" className="btn-header-contacto">

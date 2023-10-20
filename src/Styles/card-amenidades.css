@@ -12,13 +12,27 @@
 .container-card-amenidades {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   margin: auto;
   gap: 15px;
+  justify-content: center;
+}
+.container-card-amenidades img {
+  width: 100%;
+  height: auto;
+}
+.btn-header-contacto {
+  display: inline-block;
+  width: 170px;
+  background-color: #3488ce;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
 }
 .item-card-amenidades .card-image {
   position: relative;
-  background-image: url(../assets/sala.jpg);
+  background-image: url(../assets/promo-1.jpeg);
   background-size: 200%;
   background-repeat: no-repeat;
   position: relative;
@@ -33,7 +47,7 @@
   padding: 7px;
 }
 .item-card-amenidades:nth-child(2) .card-image {
-  background-image: url(../assets/jogging.jpg);
+  background-image: url(../assets/promo-2.jpeg);
 }
 .item-card-amenidades:nth-child(3) .card-image {
   background-image: url(../assets/areas-verdes.jpg);
@@ -182,13 +196,13 @@
   .container-card-amenidades {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(300px, 400px));
     margin: 22px auto;
     gap: 30px;
   }
   .item-card-amenidades .card-image {
     position: relative;
-    background-image: url(../assets/sala.jpg);
+    background-image: url(../assets/limpieza.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;

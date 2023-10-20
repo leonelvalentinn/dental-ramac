@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../Styles/card-amenidades.css";
 import Close from "../assets/cerca.png";
+import promo1 from "../assets/promo-1.jpg";
+import promo2 from "../assets/promo-2.jpg";
+import promo3 from "../assets/promo-3.jpg";
 
 const CardAmenidades = () => {
   const infoAmenidades = [
@@ -107,14 +110,28 @@ const CardAmenidades = () => {
   };
   return (
     <div className="card-amenidades">
-      <h2>Amenidades de las cuales podras disfrutar con nosotros</h2>
-      <p className="text-desc">
+      <h2>Promociones exclusivas para ti</h2>
+      <div className="container-card-amenidades">
+        <div>
+          <img src={promo1} alt="" />
+          <a href="https://wa.me/525544754479?text=Buenas tardes, quiero mi consulta de valoración gratis" className="btn-header-contacto">Agenda tu cita</a>
+        </div>
+        <div>
+          <img src={promo2} alt="" />
+          <a href="https://wa.me/525544754479?text=Buenas tardes, solicito información sobre la limpieza dental" className="btn-header-contacto">Agenda tu cita</a>
+        </div>
+        <div>
+          <img src={promo3} alt="" />
+          <a href="https://wa.me/525544754479?text=Buenas tardes, solicito información sobre el paquete infantil" className="btn-header-contacto">Agenda tu cita</a>
+        </div>
+      </div>
+      {/*<p className="text-desc">
         Pon el cursor sobre la imagen para ver más información
       </p>
       <div className="container-card-amenidades">
         <div className="item-card-amenidades">
           <div className="card-image">
-            <h2>Sala de usos multiples</h2>
+            {/*<h2>Sala de usos multiples</h2>
             <div className="container-text-img">
               <div className="text-img">
                 <h2>Sala de usos multiples</h2>
@@ -125,7 +142,7 @@ const CardAmenidades = () => {
                   tu comodidad y bienestar.
                 </p>
               </div>
-            </div>
+    </div>
           </div>
           <button
             className="btn-amenidades"
@@ -461,7 +478,7 @@ const CardAmenidades = () => {
           className="container-modal-amenidades"
           id="container-modal-amenidades"
         ></div>
-      </div>
+      </div>*/}
     </div>
   );
 };

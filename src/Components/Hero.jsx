@@ -9,14 +9,14 @@ import "swiper/css/effect-fade";
 
 // import required modules
 import { Autoplay, EffectFade } from "swiper";
-import Slider1 from "../assets/render5.jpg";
-import Slider2 from "../assets/render1.jpg";
-import Slider3 from "../assets/render3.jpg";
-import Slider4 from "../assets/render4.jpg";
-import Slider5 from "../assets/slider-movil-1.jpg";
-import Slider6 from "../assets/img10.jpeg";
-import Slider7 from "../assets/slider-movil-3.jpg";
-import Slider8 from "../assets/slider-movil-4.jpg";
+import Slider1 from "../assets/IMG_0124.jpg";
+import Slider2 from "../assets/IMG_0176.jpg";
+import Slider3 from "../assets/IMG_0221.jpg";
+import Slider4 from "../assets/IMG_0237.jpg";
+import Slider5 from "../assets/IMG_0115.jpg";
+import Slider6 from "../assets/IMG_0176-m.jpg";
+import Slider7 from "../assets/IMG_0237.jpg";
+import Slider8 from "../assets/IMG_0221.jpg";
 
 import ButtonContact from "./ButtonContact";
 
