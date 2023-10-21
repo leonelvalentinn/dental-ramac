@@ -7,11 +7,18 @@ import foto4 from "../assets/rehabilitacion.jpg";
 import foto5 from "../assets/endodoncia.jpg";
 import foto6 from "../assets/ortodoncia.jpg";
 import foto7 from "../assets/odontopediatria.jpg";
-import foto8 from "../assets/promo-1.jpg";
-import foto9 from "../assets/promo-2.jpg";
+import foto8 from "../assets/consulta-1.jpg";
+import foto9 from "../assets/consulta.jpeg";
 import foto10 from "../assets/patologia-bucal.jpg";
 import foto12 from "../assets/laboratorio.png";
-import foto13 from "../assets/promo-3.jpg";
+import foto13 from "../assets/rectangulo-ninos.jpg";
+
+import lab from "../assets/IMG_0236.jpg";
+import imp from "../assets/IMG_0212.jpg";
+import endo from "../assets/IMG_0205.jpg";
+import orto from "../assets/ortodoncia-1.jpg"
+import cir from "../assets/IMG_0184.jpg";
+import pato from "../assets/pato.webp";
 import ButtonContact from "../Components/ButtonContact";
 
 const GaleryHome = () => {
@@ -20,56 +27,56 @@ const GaleryHome = () => {
       id: 1,
       img: foto9,
       title: "Odontología Preventiva",
-      info: "Ven y disfruta del hermoso lago de tequesquitengo con sus 5km de largo por 3km de ancho, tambien aprovecha de todas las actividades que puedes hacer en el lago.",
+      info: "La odontología preventiva es todo cuidado dental que ayuda a mantener una buena salud oral. Es una combinación de chequeos dentales regulares y el desarrollo de buenos hábitos, como el cepillado y el uso del hilo dental.",
     },
     {
       id: 2,
       img: foto8,
-      title: "Aprovechar los diversos clubes de playa",
-      info: "En la zona existen diversos clubes de playa, con bares, restaurantes, piscinas, áreas para tomar el sol con cómodos camastros y servicio de toallas, si vienes a alguno de ellos, también podrás realizar deportes tanto dentro, como fuera del lago. En estos espacios se aprovecha al máximo el día y cuentan con actividades variadas para que cada quién disfrute de lo que más le gusta sin salir de las instalaciones del club elegido.",
+      title: "Rehabilitación Oral",
+      info: "La rehabilitación oral es un campo de la odontología que se especializa en la restauración inmediata de los dientes con el fin de recuperar la funcionalidad y la armonía estética.",
     },
     {
       id: 3,
-      img: foto13,
-      title: "Pasear por los jardines de México",
-      info: "Este bello lugar queda en Morelos a 5 minutos de Tequesquitengo y se trata del Parque de jardines florales más grande del mundo. Contiene 9 jardines temáticos, además de, el Jardín ConSentidos, un área educativa y de esparcimiento especialmente dedicada para los pequeños, un Centro de Convenciones, un Centro de Exposiciones, un Centro de Eventos Sociales “Bamboo” (donde se pueden realizar bodas y otros eventos) y el Foro al aire libre: “Spectare”.",
+      img: imp,
+      title: "Implantología",
+      info: "Es una disciplina odontológica que se dedica al reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante dental en el maxilar o la mandíbula. A día de hoy se considera una de las técnicas más eficaces de rehabilitación dental.",
     },
     {
       id: 4,
-      img: foto9,
-      title: "Realizar la ruta de Zapata",
-      info: "Si disfrutas de la Historia, la Ruta de Zapata es un interesante recorrido que comienza a sólo 30 minutos de Tequesquitengo con una visita la Casa Museo de Emiliano Zapata en Anenecuilco y recorre los principales sitios por los que pasó Emiliano Zapata. Este recorrido incluye los lugares donde nació, luchó y murió. También verás el Museo de la Revolución ubicado en Tlaltizapán y la Hacienda de Chinameca, en donde Zapata murió asesinado a traición por el Coronel Guajardo en 1919 y Cuautla, en donde descansan los restos de este caudillo.",
+      img: endo,
+      title: "Endodoncia",
+      info: "Es un tratamiento para dientes infectados o descompuestos gravemente cuya causa parte del nervio del diente.",
     },
 
     {
       id: 5,
-      img: foto9,
-      title: "Ver y hasta tocar los animales en el Zoofari",
-      info: "El Zoofari que queda a 15 minutos de Tequesquitengo, cuenta con más de 1200 animales de 150 especies diferentes que se pueden ver, tocar y hasta alimentar en algunos casos. Funciona todo el año y también es una experiencia educativa ya que cada uno de los animales que viven aquí tiene su hábitat recreado. Si estás cerca, no pierdas la oportunidad de hacer el Zoofari.",
+      img: orto,
+      title: "Ortodoncia",
+      info: "Es una especialidad odontológica que estudia, previene y corrige las alteraciones del desarrollo, las formas de las arcadas dentarias y la posición de los maxilares, con el fin de restablecer el equilibrio morfológico y funcional de la boca y de la cara, mejorando también la estética facial.",
     },
     {
       id: 6,
-      img: foto9,
-      title: "Atreverte con los rápidos del rio Amacuzac",
-      info: "Este rio queda aproximadamente a 25 minutos de Tequesquitengo y sus aguas se encuentran bordeadas por las paredes de un enorme cañón, que tiene muchísima flora y fauna. El río se divide en la parte alta y la baja, cada una con diferentes intensidades de corrientes, empezando en aguas más o menos tranquilas y hasta llegar a los imponentes rápidos. Si te gustan las emociones fuertes esta es otra aventura que puedes disfrutar cuando visites esta zona. ",
+      img: foto13,
+      title: "Odontopediatría",
+      info: "Es la especialidad odontológica que proporciona cuidados terapéuticos y preventivos referentes a la salud bucodental de bebés y niños hasta la edad adolescente, incluyendo aquellos que requieran de necesidades especiales.",
     },
     {
       id: 7,
-      img: foto9,
-      title: "Visitar las grutas de Cacahuamilpa",
-      info: "Las Grutas de Cacahuamilpa se encuentran a 30 minutos desde Tequesquitengo, aunque parte de ellas se encuentran dentro de Morelos, en realidad son consideradas un destino turístico del estado de Guerrero.  Son pasajes con formaciones rocosas de estalactitas y estalagmitas en donde se pueden apreciar interesantes figuras que con la iluminación dan apariencias humanas, animales y de objetos que parecen haber sido moldeados por manos humanas. Este es un recorrido fantástico que vale la pena completar con amigos o familiares.",
+      img: cir,
+      title: "Cirugía Bucal",
+      info: "Hace referencia a cualquier procedimiento quirúrgico en la boca y la mandíbula o alrededor de estas, generalmente hecho por un especialista dental capacitado para realizar ciertos tipos de cirugías orales.",
     },
     {
       id: 8,
-      img: foto9,
-      title: "Volar en globo aerostático, ultraligeros o avionetas",
-      info: " Sobrevolar este lugar a bordo de un globo aerostático, es una aventura muy emocionante en la que pueden participar un máximo de 6 pasajeros y te permitirá admirar este lugar desde los cielos. También puedes hacerlo en los vuelos en ultraligero y avionetas para admirar la belleza de Tequesquitengo a 600 metros de altura con todas las medidas de seguridad y guías acompañantes capacitados.",
+      img: pato,
+      title: "Patología Bucal",
+      info: "Es el área de la odontología y la disciplina de la patología que se ocupa del origen, la identificación y la solución de las enfermedades orales que atentan a la boca y los dientes.",
     },
     {
       id: 9,
-      img: foto9,
-      title: " Saltar con ShyDive",
-      info: "Si te gusta el paracaidismo, en SkyDive podrás hacer tu salto “Tandem” (con el apoyo de un instructor calificado). No te preocupes, recibirás la capacitación adecuada para realizar tu salto, contarás con instructores altamente capacitados y certificados, así como con aeronaves y equipo de alta calidad. ",
+      img: lab,
+      title: "Laboratorio Dental",
+      info: "Contamos con laboratorio dental en nuestra clinica, esto hace que tu tratamiento sea más rápido y eficiente.",
     },
     {
       id: 10,
@@ -122,7 +129,7 @@ const GaleryHome = () => {
   };
 
   return (
-    <div className="galery">
+    <div className="galery" id="servicios">
       <h2> Servicios y Especialidades</h2>
       <div className="container-galery">
         <div className="item-galery">
@@ -149,28 +156,28 @@ const GaleryHome = () => {
         <div className="item-galery">
         <h3>Cirugía Bucal</h3>
           <img src={foto2} alt="" />
-          <button className="btn-mas" id="4" onClick={(e) => openModal(e)}>
+          <button className="btn-mas" id="7" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
         <h3>Endodoncia </h3>
           <img src={foto5} alt="" />
-          <button className="btn-mas" id="5" onClick={(e) => openModal(e)}>
+          <button className="btn-mas" id="4" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
         <h3>Ortodoncia </h3>
           <img src={foto6} alt="" />
-          <button className="btn-mas" id="6" onClick={(e) => openModal(e)}>
+          <button className="btn-mas" id="5" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>
         <div className="item-galery">
         <h3>Odontopediatría </h3>
           <img src={foto7} alt="" />
-          <button className="btn-mas" id="7" onClick={(e) => openModal(e)}>
+          <button className="btn-mas" id="6" onClick={(e) => openModal(e)}>
             Ver más
           </button>
         </div>

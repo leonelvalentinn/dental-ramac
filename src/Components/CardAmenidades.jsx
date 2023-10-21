@@ -112,15 +112,15 @@ const CardAmenidades = () => {
     <div className="card-amenidades">
       <h2>Promociones exclusivas para ti</h2>
       <div className="container-card-amenidades">
-        <div>
+        <div className="item-promo">
           <img src={promo1} alt="" />
           <a href="https://wa.me/525544754479?text=Buenas tardes, quiero mi consulta de valoración gratis" className="btn-header-contacto">Agenda tu cita</a>
         </div>
-        <div>
+        <div className="item-promo">
           <img src={promo2} alt="" />
           <a href="https://wa.me/525544754479?text=Buenas tardes, solicito información sobre la limpieza dental" className="btn-header-contacto">Agenda tu cita</a>
         </div>
-        <div>
+        <div className="item-promo">
           <img src={promo3} alt="" />
           <a href="https://wa.me/525544754479?text=Buenas tardes, solicito información sobre el paquete infantil" className="btn-header-contacto">Agenda tu cita</a>
         </div>

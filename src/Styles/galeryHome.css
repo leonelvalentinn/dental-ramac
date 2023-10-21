@@ -1,3 +1,12 @@
+button {
+  cursor: pointer;
+  transition: all 0.2s linear;
+  transform: scale(1);
+}
+button:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.1);
+}
 .galery {
   width: 100%;
   overflow-x: hidden;
@@ -110,7 +119,7 @@
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  border: 5px solid #b18904;
+  border: 5px solid #0b518a;
 }
 .container-atractions img {
   width: 100%;
@@ -130,7 +139,7 @@
   display: block;
   margin: 7px auto;
   width: 170px;
-  background-color: #b18904;
+  background-color: #0b518a;
   text-align: center;
   padding: 10px;
   color: #fff;
@@ -144,7 +153,7 @@
     display: block;
     margin: 10px auto;
     width: 200px;
-    background-color: #b18904;
+    background-color: #0b518a;
     text-align: center;
     padding: 10px;
     color: #fff;
@@ -217,7 +226,7 @@
     align-items: center;
     flex-direction: column;
     padding: 35px;
-    border: 5px solid #b18904;
+    border: 5px solid #0b518a;
   }
   .container-atractions h2 {
     font-size: 2em;

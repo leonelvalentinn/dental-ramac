@@ -2,7 +2,21 @@
   width: 100%;
   height: auto;
 }
-
+.item-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item-promo a {
+  margin-top: 15px;
+  transition: all 0.2s linear;
+  transform: scale(1);
+}
+.item-promo a:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.1);
+}
 .card-amenidades h2 {
   color: #2e2e2e;
   font-size: 1.5em;
@@ -20,6 +34,12 @@
 .container-card-amenidades img {
   width: 100%;
   height: auto;
+  transform: scale(1);
+  transition: all 0.2s linear;
+}
+.container-card-amenidades img:hover {
+  transition: all 0.2s linear;
+  transform: scale(0.9);
 }
 .btn-header-contacto {
   display: inline-block;

@@ -16,6 +16,12 @@
 }
 .item-render-fotos img {
   max-width: 100%;
+  transition: all 0.2s linear;
+  transform: scale(1);
+}
+.item-render-fotos img:hover {
+  transition: all 0.2s linear;
+  transform: scale(0.9);
 }
 .render-fotos p {
   text-align: center;

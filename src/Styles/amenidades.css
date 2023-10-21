@@ -47,8 +47,8 @@
   border-top-left-radius: 12px;
 }
 .item-amenidades img {
-  width: 45px;
-  height: 45px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -104,7 +104,7 @@
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
   }
   .item-amenidades {
@@ -114,8 +114,8 @@
   }
 
   .item-amenidades img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
   }
   .item-amenidades h2 {

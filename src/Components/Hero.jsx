@@ -22,7 +22,7 @@ import ButtonContact from "./ButtonContact";
 
 const Hero = () => {
   return (
-    <div className="slider">
+    <div className="slider" id="inicio">
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -39,7 +39,7 @@ const Hero = () => {
       >
         <SwiperSlide>
           <img src={Slider1} className="img-slider" />
-          <img src={Slider5} alt="" className="img-movil" />
+          <img src={Slider6} alt="" className="img-movil" />
           <div className="container-text">
             <div className="text-slider">
               <p>El día más malgastado de todos es sin una sonrisa. <small>(Edward Estlin Cummings)</small></p>
@@ -49,7 +49,7 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={Slider2} className="img-slider" />
-          <img src={Slider6} alt="" className="img-movil" />
+          <img src={Slider5} alt="" className="img-movil" />
           <div className="container-text">
             <div className="text-slider">
               <p>Un día sin sonreír es un día perdido. <small>(Charlie Chaplin)</small></p>

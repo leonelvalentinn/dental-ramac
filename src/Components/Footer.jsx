@@ -39,9 +39,9 @@ const Footer = () => {
           <h2>Menu</h2>
           <div className="menu-footer">
             <Link to="/">Inicio</Link>
-            <Link to="/nosotros">Nosotros</Link>
-            <Link to="/desarrollo">Servicios</Link>
-            <Link to="/financiamiento">Promociones</Link>
+            <Link to="/">Nosotros</Link>
+            <Link to="/">Servicios</Link>
+            <Link to="/promociones">Promociones</Link>
           </div>
         </div>
         <div className="sub-item-footer">
@@ -51,13 +51,13 @@ const Footer = () => {
           <h2>Síguenos</h2>
           <div className="redes-footer">
             <a
-              href="https://www.facebook.com/Regal.ResidencesMX"
+              href="https://www.facebook.com/dentalramac?locale=es_LA"
               target="_blank"
             >
               <i class="fa-brands fa-facebook"></i>
             </a>
             <a
-              href="https://instagram.com/regal.residencesmx?igshid=ZDc4ODBmNjlmNQ=="
+              href="https://instagram.com/dental.ramac?igshid=NTc4MTIwNjQ2YQ=="
               target="_blank"
             >
               <i class="fa-brands fa-square-instagram"></i>

@@ -29,6 +29,14 @@ const Amenidades = () => {
           <img src={area5} alt="" />
           <h2>Dr. Joan Kenedy Mayo</h2>
         </div>
+        <div className="item-amenidades">
+          <img src={area5} alt="" />
+          <h2>Dr. Joan Kenedy Mayo</h2>
+        </div>
+        <div className="item-amenidades">
+          <img src={area5} alt="" />
+          <h2>Dr. Joan Kenedy Mayo</h2>
+        </div>
         {/*<div className="item-amenidades">
           <img src={area6} alt="" />
           <h2>Dra. Silvia Pérez</h2>
@@ -38,7 +46,7 @@ const Amenidades = () => {
           <h2>Dr. Omar Arenas</h2>
         </div>*/}
       </div>
-      <Link to="/amenidades">Ver más</Link>
+      {/*<Link to="/amenidades">Ver más</Link>*/}
     </div>
   );
 };

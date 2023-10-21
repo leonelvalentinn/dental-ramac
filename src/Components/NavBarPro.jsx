@@ -1,30 +1,49 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
+import { Link, useNavigate } from "react-router-dom";
 import Scroll from 'react-scroll';
-import { useNavigate } from "react-router-dom";
+
 
 import Logo from "../assets/logo-2.png";
 import "../Styles/navbar.css";
 
-const Navbar = () => {
+const NavBarPro = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isNavbar, setIsNavbar] = useState(false);
+
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-
   const navigate = useNavigate();
   const scroller = Scroll.scroller;
   
-  const goToHomeAndScroll = async () => {
-
-    await navigate('/promociones');
-    await scroller.scrollTo('inicio', {
+  const goToServicesAndScroll = async () => {
+    await navigate('/');
+    await scroller.scrollTo('servicios', {
       duration: 500,
       delay: 100,
       smooth: true,
+      offset: -90
+    });
+  };
+
+  const goToHomeAndScroll = async () => {
+    await navigate('/');
+    await scroller.scrollTo('inicio', {
+      duration: 500,
+      delay: 0,
+      smooth: true,
       offset: 0
+    });
+  };
+
+    const goToAboutAndScroll = async () => {
+    await navigate('/');
+    await scroller.scrollTo('about', {
+      duration: 500,
+      delay: 100,
+      smooth: true,
+      offset: -80
     });
   };
 
@@ -54,35 +73,25 @@ const Navbar = () => {
               className="fa-solid fa-xmark close"
               onClick={() => setIsOpen(!isOpen)}
             ></i>
-            <Link to="/" onClick={() => handleClick(!isOpen)}>
+            <a 
+              onClick={() => goToHomeAndScroll() }
+            >
               Inicio
-            </Link>
-            <Link 
-              to="about"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-90}
-              duration={500}
-              className="menu-link"
-              onClick={() => handleClick(!isOpen)}
+            </a>
+            <a 
+              onClick={() => goToAboutAndScroll()}
             >
               Nosotros
-            </Link>
-            <Link 
-              to="servicios"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              className="menu-link"
-              onClick={() => handleClick(!isOpen)}
+            </a>
+            <a 
+              
+              onClick={() => goToServicesAndScroll() }
             >
               Servicios
-            </Link>
+            </a>
             <a 
-              onClick={() => goToHomeAndScroll()}
+            href="#/promociones"
+              onClick={() => handleClick(!isOpen)}
             >
               Promociones
             </a>
@@ -124,47 +133,31 @@ const Navbar = () => {
         <nav className="navbar-descktop">
           <div className="container-descktop">
             <div className="nav-link">
-            <Link 
-              to="inicio"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-              className="menu-link"
-              
+            <a 
+              onClick={() => goToHomeAndScroll() }
             >
-                Inicio
-              </Link>
+              Inicio
+            </a>
             </div>
 
-            <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-            <Link 
-              to="about"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-90}
-              duration={500}
-              className="menu-link"
-              
-            >Nosotros</Link>
-            </div>
-
-            <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-            <Link 
-              to="servicios"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              className="menu-link"
-              
-            >Servicios</Link>
-            </div>
             <div className="nav-link">
-              <a onClick={() => goToHomeAndScroll() }
+            <a 
+              onClick={() => goToAboutAndScroll()}
+            >
+              Nosotros
+            </a>
+            </div>
+
+            <div className="nav-link">
+            <a 
+              
+              onClick={() => goToServicesAndScroll() }
+            >
+              Servicios
+            </a>
+            </div>
+            <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
+              <a href="#/promociones"
 
               
             >Promociones</a>
@@ -186,4 +179,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBarPro;

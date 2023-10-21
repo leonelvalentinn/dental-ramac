@@ -6,10 +6,12 @@ import VideoGround from "../Components/VideoGround";
 import FondoMobile from "../Components/FondoMobile";
 import Amenidades from "../Components/Amenidades";
 import RenderFotos from "../Components/RenderFotos";
+import Navbar from "../Components/Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <div id="inicio">
+      <Navbar />
       <Hero />
       <About />
       <Amenidades />

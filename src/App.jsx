@@ -12,7 +12,7 @@ import Financiamento from "./Pages/Financiamiento";
 function App() {
   return (
     <>
-      <Navbar />
+      
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<Nosotros />} path="/nosotros" />
