@@ -25,13 +25,13 @@ const GaleryHome = () => {
   const infoModal = [
     {
       id: 1,
-      img: foto9,
+      img: pato,
       title: "Odontología Preventiva",
       info: "La odontología preventiva es todo cuidado dental que ayuda a mantener una buena salud oral. Es una combinación de chequeos dentales regulares y el desarrollo de buenos hábitos, como el cepillado y el uso del hilo dental.",
     },
     {
       id: 2,
-      img: foto8,
+      img: foto1,
       title: "Rehabilitación Oral",
       info: "La rehabilitación oral es un campo de la odontología que se especializa en la restauración inmediata de los dientes con el fin de recuperar la funcionalidad y la armonía estética.",
     },
@@ -56,7 +56,7 @@ const GaleryHome = () => {
     },
     {
       id: 6,
-      img: foto13,
+      img: foto7,
       title: "Odontopediatría",
       info: "Es la especialidad odontológica que proporciona cuidados terapéuticos y preventivos referentes a la salud bucodental de bebés y niños hasta la edad adolescente, incluyendo aquellos que requieran de necesidades especiales.",
     },

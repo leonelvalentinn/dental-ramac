@@ -1,6 +1,7 @@
 .card-amenidades {
   width: 100%;
   height: auto;
+  display: none;
 }
 .item-promo {
   display: flex;
