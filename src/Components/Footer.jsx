@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h3>Horario</h3>
             <p>
-            Lunes a Viernes de 9:30 a 2:00pm 4:00 a 7:00 pm <br />
+            Lunes a Viernes de 9:30 a 2:00pm y 3:30 a 7:00 pm <br />
             Sábados de 9:00 a 2:00 pm
             </p>
           </div>
