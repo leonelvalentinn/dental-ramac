@@ -17,7 +17,6 @@ const Home = () => {
       <Amenidades />
       <RenderFotos />
       <GaleryHome />
-
       <VideoGround />
     </div>
   );
