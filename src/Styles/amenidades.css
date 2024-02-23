@@ -28,8 +28,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
-  max-width: 1000px;
+  padding: 0 40px;
+  max-width: 420px;
+  position: relative;
 }
 .item-amenidades {
   display: flex;
@@ -38,7 +39,7 @@
   flex-direction: column;
   background-color: #3488ce;
   padding: 20px;
-  max-width: 300px;
+  max-width: 340px;
 }
 .item-amenidades:nth-child(1) {
   border-bottom-right-radius: 12px;
@@ -85,22 +86,10 @@
 .list-details {
   padding-left: 1rem;
 }
-.amenidades a {
-  display: block;
-  margin: 20px auto 5px auto;
-  width: 170px;
-  background-color: #fff;
-  text-align: center;
-  padding: 10px;
-  color: #2e2e2e;
-  text-decoration: none;
-  border-radius: 7px;
-  font-size: 1.1em;
-  transition: 1s;
-}
-.amenidades a:hover {
-  transform: scale(0.9);
-  transition: 1s;
+
+.amenidades a:hover > svg {
+  transition: all 0.2s linear;
+  fill: white;
 }
 
 /*cui*/
@@ -319,20 +308,31 @@
 .mt-3 {
   margin-top: 1rem !important;
 }
-
+.icon-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+.review-swiper-button-next {
+  right: 5px;
+}
+.review-swiper-button-prev {
+  left: 5px;
+}
+.icon-arrow svg {
+  fill: rgba(255, 255, 255, 0.66);
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s linear;
+}
+.swiper-button-next, .swiper-button-prev {
+  display: none !important;
+}
 @media (min-width: 768px) {
-  .amenidades a {
-    display: block;
-    margin: 30px auto 5px auto;
-    width: 200px;
-    background-color: #fff;
-    text-align: center;
-    padding: 10px;
-    color: #2e2e2e;
-    text-decoration: none;
-    border-radius: 7px;
-    font-size: 1.5em;
-  }
+
   .amenidades {
     width: 100%;
     /*background-color: #2e2e2e;*/
@@ -368,5 +368,15 @@
     font-size: 1.2em;
     color: #fff;
     font-weight: 300;
+  }
+  .container-swiper {
+    padding: 0 1rem;
+    max-width: 1100px;
+  }
+  .review-swiper-button-next {
+    right: -20px;
+  }
+  .review-swiper-button-prev {
+    left: -20px;
   }
 }
