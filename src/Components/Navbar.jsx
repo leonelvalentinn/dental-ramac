@@ -97,9 +97,9 @@ const Navbar = () => {
                 <i class="fa-brands fa-whatsapp"></i>
                 <p>Información</p>
               </a>
-              <a href="tel:5554041962" target="_blank">
+              <a href="tel:5544754479" target="_blank">
                 <i className="fa-solid fa-phone"></i>
-                <p>5554041962</p>
+                <p>5544754479</p>
               </a>
             </div>
           </div>
@@ -170,8 +170,8 @@ const Navbar = () => {
             >Promociones</a>
             </div>
             <div className="nav-link" onClick={() => setIsNavbar(!isNavbar)}>
-              <a href="tel:5554041962" className="btn-header-contacto">
-                5554041962
+              <a href="tel:5544754479" className="btn-header-contacto">
+                5544754479
               </a>
             </div>
           </div>
