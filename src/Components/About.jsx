@@ -1,6 +1,5 @@
-import React from "react";
-import ReactPlayer from "react-player";
-import fondo from "../assets/hero-bg.jpg"
+
+import grupal from "../assets/grupal-1.webp"
 
 import "../Styles/about.css";
 
@@ -21,7 +20,7 @@ const About = () => {
         </div>
         <div className="item-about">
           {/*<ReactPlayer
-            url={"https://vimeo.com/839896157?share=copy"}
+            url={"https://vimeo.com/839"}
             autoplay
             controls={true}
             loop
@@ -29,7 +28,7 @@ const About = () => {
             height="100%"
             className="react-player"
           />*/}
-          <img src={fondo} alt="Fondo nosotros" />
+          <img src={grupal} alt="Foto Grupal del Equipo Dental Ramac" />
         </div>
       </div>
     </div>

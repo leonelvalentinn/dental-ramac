@@ -1,13 +1,12 @@
-import React from "react";
+
 import "../Styles/render-fotos.css";
 import Render1 from "../assets/IMG_0112.jpg";
-import Render2 from "../assets/IMG_0176.jpg";
-import Render3 from "../assets/IMG_0119.jpg";
-import Render4 from "../assets/IMG_0124.jpg";
-import Render5 from "../assets/IMG_0141.jpg";
-import Render6 from "../assets/IMG_0177.jpg";
-import Render7 from "../assets/render7.jpg";
-import Render8 from "../assets/render8.jpg";
+import Render6 from "../assets/hero-1.webp";
+import Render5 from "../assets/station-1.webp";
+import Render4 from "../assets/station-2.webp";
+import Render3 from "../assets/station-3.webp";
+import Render2 from "../assets/IMG_0119.jpg";
+
 const RenderFotos = () => {
   return (
     <div className="render-fotos">
@@ -15,22 +14,22 @@ const RenderFotos = () => {
       {/*<p>Imágenes de render</p>*/}
       <div className="container-render-fotos">
         <div className="item-render-fotos">
-          <img src={Render1} alt="" />
+          <img src={Render1} alt="Fachada Dental Ramac" />
         </div>
         <div className="item-render-fotos">
-          <img src={Render2} alt="" />
+          <img src={Render2} alt="Sala de espera" />
         </div>
         <div className="item-render-fotos">
-          <img src={Render3} alt="" />
+          <img src={Render3} alt="Sala de espera" />
         </div>
         <div className="item-render-fotos">
-          <img src={Render4} alt="" />
+          <img src={Render4} alt="Consultorio de la Dra. Nora" />
         </div>
         <div className="item-render-fotos">
-          <img src={Render5} alt="" />
+          <img src={Render5} alt="Vista general de las estaciones de servicio" />
         </div>
         <div className="item-render-fotos">
-          <img src={Render6} alt="" />
+          <img src={Render6} alt="Estación de servicios" />
         </div>
         {/*<div className="item-render-fotos">
           <img src={Render7} alt="" />

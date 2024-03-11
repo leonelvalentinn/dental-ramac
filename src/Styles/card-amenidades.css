@@ -67,46 +67,6 @@
   flex-direction: column;
   padding: 7px;
 }
-.item-card-amenidades:nth-child(2) .card-image {
-  background-image: url(../assets/promo-2.jpeg);
-}
-.item-card-amenidades:nth-child(3) .card-image {
-  background-image: url(../assets/areas-verdes.jpg);
-}
-.item-card-amenidades:nth-child(4) .card-image {
-  background-image: url(../assets/alberca.jpg);
-}
-.item-card-amenidades:nth-child(5) .card-image {
-  background-image: url(../assets/juego-infantiles.jpg);
-}
-.item-card-amenidades:nth-child(6) .card-image {
-  background-image: url(../assets/area-mascotas.jpg);
-}
-.item-card-amenidades:nth-child(7) .card-image {
-  background-image: url(../assets/jacuzzi.jpg);
-}
-.item-card-amenidades:nth-child(8) .card-image {
-  background-image: url(../assets/chapoteadero.jpg);
-}
-.item-card-amenidades:nth-child(9) .card-image {
-  background-image: url(../assets/regaderas.jpg);
-}
-.item-card-amenidades:nth-child(10) .card-image {
-  background-image: url(../assets/baños.jpg);
-}
-.item-card-amenidades:nth-child(11) .card-image {
-  background-image: url(../assets/restaurante-bar.jpg);
-}
-.item-card-amenidades:nth-child(12) .card-image {
-  background-image: url(../assets/vestidores.jpg);
-}
-.item-card-amenidades:nth-child(13) .card-image {
-  background-image: url(../assets/palapas.jpg);
-}
-.item-card-amenidades:nth-child(14) .card-image {
-  background-image: url(../assets/estacionamiento.jpg);
-}
-
 .card-image h2 {
   color: #fff;
   font-size: 1em;

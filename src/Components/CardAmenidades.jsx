@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../Styles/card-amenidades.css";
-import Close from "../assets/cerca.png";
-import promo1 from "../assets/promo1.jpg";
-import promo2 from "../assets/promo2.jpeg";
-import promo3 from "../assets/promo-3.jpg";
+
 
 const CardAmenidades = () => {
   const infoAmenidades = [
@@ -87,6 +84,7 @@ const CardAmenidades = () => {
     let evento = e.target.id;
     modalAmenidad(evento);
   };
+  console.log(handleAmenidad)
 
   const modalAmenidad = (evento) => {
     let container = document.getElementById("container-modal-amenidades");

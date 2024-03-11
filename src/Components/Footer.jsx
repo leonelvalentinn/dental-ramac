@@ -1,4 +1,4 @@
-import React from "react";
+
 import LogoFooter from "../assets/logo-2.png";
 import { Link } from "react-router-dom";
 import "../Styles/footer.css";
@@ -30,7 +30,7 @@ const Footer = () => {
           style={{ border: 0 }}
           allowfullscreen="" 
           loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
+          >
         </iframe>
         </div>
       </div>
@@ -53,14 +53,16 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/dentalramac?locale=es_LA"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <i class="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook"></i>
             </a>
             <a
               href="https://instagram.com/dental.ramac?igshid=NTc4MTIwNjQ2YQ=="
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <i class="fa-brands fa-square-instagram"></i>
+              <i className="fa-brands fa-square-instagram"></i>
             </a>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import HeroAbout from "../Components/HeroAbout";
 import AboutMe from "../Components/AboutMe";
 import Ofrecemos from "../Components/Ofrecemos";

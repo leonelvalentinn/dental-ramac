@@ -1,5 +1,4 @@
-import React from "react";
-import Plano from "../assets/about.jpg";
+
 import "../Styles/description.css";
 
 const Description = () => {
@@ -17,7 +16,7 @@ const Description = () => {
           </p>
         </div>
         <div className="item-description">
-          <img src={Plano} alt="" />
+          <img src='' alt="" />
         </div>
       </div>
     </div>

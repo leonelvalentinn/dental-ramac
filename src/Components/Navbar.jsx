@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import Scroll from 'react-scroll';
 import { useNavigate } from "react-router-dom";
@@ -28,10 +28,12 @@ const Navbar = () => {
     });
   };
 
-  const handleNabvar = () => {
+  const handleNavbar = () => {
     setIsNavbar(!isNavbar);
   };
-
+  if (!handleNavbar) {
+    console.log('')
+  }
   const navbarBackground = () => {
     if (window.scrollY > 80) {
       setIsNavbar(true);
@@ -45,7 +47,17 @@ const Navbar = () => {
     <div className={`navbar ${isNavbar ? "back" : ""}`} id="navbar">
       <div className="container-navbar">
         <div className="logo-container">
+        <Link 
+          to="inicio"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="menu-link"
+        >
           <img src={Logo} alt="" className="logo" />
+        </Link>
         </div>
 
         <nav className={`menu ${isOpen ? "open" : ""}`}>
@@ -93,11 +105,12 @@ const Navbar = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=525544754479"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <i class="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-whatsapp"></i>
                 <p>Información</p>
               </a>
-              <a href="tel:5544754479" target="_blank">
+              <a href="tel:5544754479" target="_blank" rel="noopener noreferrer">
                 <i className="fa-solid fa-phone"></i>
                 <p>5544754479</p>
               </a>
@@ -109,14 +122,16 @@ const Navbar = () => {
               <a
                 href="https://www.facebook.com/dentalramac?locale=es_LA"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <i class="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-facebook"></i>
               </a>
               <a
                 href="https://instagram.com/dental.ramac?igshid=NTc4MTIwNjQ2YQ=="
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <i class="fa-brands fa-square-instagram"></i>
+                <i className="fa-brands fa-square-instagram"></i>
               </a>
             </div>
           </div>

@@ -1,25 +1,21 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../Styles/galeryHome.css";
-import foto1 from "../assets/odontologia-preventiva.jpg";
-import foto2 from "../assets/cirugia-bucal.jpg";
-import foto3 from "../assets/implantologia.jpg";
-import foto4 from "../assets/rehabilitacion.jpg";
-import foto5 from "../assets/endodoncia.jpg";
+import foto1 from "../assets/odontologia-preventiva.webp";
+import foto2 from "../assets/cirugia.webp";
+import foto3 from "../assets/implantologia.webp";
+import foto4 from "../assets/armonia.webp";
+import foto5 from "../assets/endodoncia-1.webp";
 import foto6 from "../assets/ortodoncia.jpg";
 import foto7 from "../assets/odontopediatria.jpg";
-import foto8 from "../assets/consulta-1.jpg";
-import foto9 from "../assets/consulta.jpeg";
-import foto10 from "../assets/patologia-bucal.jpg";
-import foto12 from "../assets/laboratorio.png";
-import foto13 from "../assets/rectangulo-ninos.jpg";
+import foto10 from "../assets/pathology.webp";
+import foto12 from "../assets/laboratorio.webp";
 
 import lab from "../assets/IMG_0236.jpg";
 import imp from "../assets/IMG_0212.jpg";
-import endo from "../assets/IMG_0205.jpg";
+import endo from "../assets/endodoncia-1.webp";
 import orto from "../assets/ortodoncia-1.jpg"
 import cir from "../assets/IMG_0184.jpg";
 import pato from "../assets/pato.webp";
-import ButtonContact from "../Components/ButtonContact";
 
 const GaleryHome = () => {
   const infoModal = [
@@ -80,19 +76,19 @@ const GaleryHome = () => {
     },
     {
       id: 10,
-      img: foto9,
+      img: lab,
       title: "Disfruta de la rica comida de la zona",
       info: "Como todo México tenemos la fortuna de tener una gran variedad de sabores , en tequesquitengo no es la excepción, ven y disfruta de toda la variedad de platillos.",
     },
     {
       id: 11,
-      img: foto9,
+      img: lab,
       title: " Conocer la zona arqueológica de Xochicalco",
       info: "La zona arqueológica de Xochicalco ha sido declarada como Patrimonio de la Humanidad por la UNESCO, está ubicada a tan sólo 33 minutos de Tequesquitengo, en el estado de Morelos. En este lugar podrás ver el museo que con múltiples exposiciones relata la cultura que creó esta ciudad precolombina, entre sus construcciones están el juego de pelota y el observatorio astronómico.",
     },
     {
       id: 12,
-      img: foto9,
+      img: lab,
       title: "Ir al pueblo mágico de Tepoztlán ",
       info: "Tepoztlán es una de las ciudades coloniales más atractivas de México. Está situada en un valle de montaña a 50 minutos de Tequequitengo. Esta región tiene volcanes cercanos, ríos y cascadas. Pero también muestra una mezcla de la época colonial y nuestra cultura indígena. Entre los sitios turísticos de esta ciudad se encuentran el Museo del ex Convento Dominico de La Natividad, la pirámide de la cima de la montaña, el mercado de artesanos que se instala todos los fines de semana y una multitud de sitios históricos y paisajes fuera de este mundo. ",
     },

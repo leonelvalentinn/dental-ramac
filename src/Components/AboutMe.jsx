@@ -1,6 +1,5 @@
-import React from "react";
+
 import "../Styles/about-me.css";
-import team from "../assets/team.jpg";
 
 import ButtonContact from "./ButtonContact";
 
@@ -10,7 +9,7 @@ const AboutMe = () => {
       <h2>Nosotros</h2>
       <div className="container-about-me">
         <div className="item-about-me">
-          <img src={team} alt="" />
+          <img src='{team' alt="" />
         </div>
         <div className="item-about-me">
           <h3>

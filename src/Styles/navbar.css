@@ -8,11 +8,13 @@ a {
   left: 0;
   top: 0;
   z-index: 998;
-  transition: 1s;
+  transition: all 0.275s linear;
+  backdrop-filter: blur(10px);
+  background-color: #0e335296;
 }
 .navbar.back {
   background-color: #0e3352;
-  transition: 1s;
+  transition: all 0.275s linear;
 }
 .container-navbar {
   width: 95%;
@@ -137,7 +139,6 @@ a {
   width: 35px;
   height: 30px;
   position: relative;
-  margin-right: 15px;
   cursor: pointer;
 }
 .menu-bar span {
@@ -178,7 +179,6 @@ a {
     width: 35px;
     height: 35px;
     position: relative;
-    margin-right: 30px;
   }
 
   .navbar-descktop {
@@ -189,10 +189,10 @@ a {
     width: 60%;
   }
   .container-descktop {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 15px;
     position: relative;
   }
   .nav-link {
@@ -229,5 +229,16 @@ a {
     text-align: center;
     text-decoration: none;
     padding: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .container-descktop {
+    display: flex;
+    gap: 15px;
+  }
+}
+@media (min-width: 1180px) {
+  .container-descktop {
+    gap: 40px;
   }
 }

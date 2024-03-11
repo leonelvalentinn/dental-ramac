@@ -2,14 +2,12 @@
   max-width: 100%;
   height: 700px;
   position: relative;
+  display: inline-block;
 }
 small {
   font-size: 10px;
 }
 .img-slider {
-  display: none;
-}
-.img-movil {
   width: 100%;
   height: 700px;
   object-fit: cover;
@@ -37,7 +35,7 @@ small {
   justify-content: center;
 }
 .text-slider p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #fff;
   text-align: center;
   margin: 0;
@@ -49,9 +47,9 @@ small {
     font-size: 13px;
   }
   .img-slider {
-    display: block;
+    display: inline-block;
     width: 100%;
-    height: 650px;
+    height: 100vh;
     object-fit: cover;
   }
   .img-movil {
@@ -71,7 +69,7 @@ small {
     justify-content: center;
   }
   .text-slider p {
-    font-size: 2.2em;
+    font-size: 1.5rem;
     color: #fff;
     text-align: center;
     margin: 0;

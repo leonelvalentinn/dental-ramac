@@ -1,4 +1,4 @@
-import React from "react";
+
 import HeroAmenidades from "../Components/HeroAmenidades";
 import CardAmenidades from "../Components/CardAmenidades";
 import VideoGround from "../Components/VideoGround";  

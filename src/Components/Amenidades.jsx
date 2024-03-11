@@ -1,12 +1,9 @@
 // Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { CCollapse, CCard, CCardBody, CButton  } from '@coreui/react'
 import "../Styles/amenidades.css";
-import area1 from "../assets/amenidad1.png";
 import area2 from "../assets/marcela.png";
 import area3 from "../assets/eduardo.png";
 import area4 from "../assets/edgar.png";
@@ -28,6 +25,8 @@ import 'swiper/css';
 
 
 const Amenidades = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const [visibleA, setVisibleA] = useState(false);
   const [visibleB, setVisibleB] = useState(false);
   const [visibleC, setVisibleC] = useState(false);
@@ -41,6 +40,7 @@ const Amenidades = () => {
   const [visibleK, setVisibleK] = useState(false);
   const [visibleL, setVisibleL] = useState(false);
   const swiper = useSwiper();
+  console.log(swiper);
   return (
     <div className="amenidades">
       <h2>Nuestro Equipo</h2>
@@ -58,7 +58,7 @@ const Amenidades = () => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
-          <SwiperSlide>
+          <SwiperSlide className={`${isOpen ? "none" : ""}`}>
             <div className="item-amenidades">
               <img src={area2} alt="" />
               <h2>G. Marcela Ramírez Macias</h2>

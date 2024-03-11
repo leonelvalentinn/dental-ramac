@@ -1,7 +1,4 @@
-import React from "react";
-import Img1 from "../assets/slider-1.jpg";
-import Img2 from "../assets/seguridad.jpg";
-import Img3 from "../assets/financiamiento.jpg";
+
 import ButtonContact from "../Components/ButtonContact";
 import "../Styles/ofrecemos.css";
 
@@ -11,7 +8,7 @@ const Ofrecemos = () => {
       <h2>¿Qué te ofrecemos?</h2>
       <div className="container-ofrecemos">
         <div className="item-ofrecemos">
-          <img src={Img1} alt="" />
+          <img src='' alt="" />
 
           <h2>Excelente Ubicación</h2>
           <p>
@@ -22,7 +19,7 @@ const Ofrecemos = () => {
           <ButtonContact />
         </div>
         <div className="item-ofrecemos">
-          <img src={Img2} alt="" />
+          <img src='' alt="" />
 
           <h2>Seguridad</h2>
           <p>Vive comodo y seguro con nosotros</p>
@@ -35,7 +32,7 @@ const Ofrecemos = () => {
           <ButtonContact />
         </div>
         <div className="item-ofrecemos">
-          <img src={Img3} alt="" />
+          <img src='' alt="" />
 
           <h2>Financiamiento</h2>
           <p>Contamos con los mejores planes de financiamiento. </p>
