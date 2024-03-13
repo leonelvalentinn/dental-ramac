@@ -31,12 +31,12 @@
   }
   .container-video-text h2 {
     color: #fff;
-    font-size: 3em;
+    font-size: 1.7rem;
   }
 
   .container-video-text p {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 1.3rem;
     margin: 10px auto 25px;
   }
   .container-video-text a {
@@ -61,5 +61,15 @@
   }
   .video-escritorio {
     display: block;
+  }
+  .container-video-text h2 {
+    color: #fff;
+    font-size: 1.9rem;
+  }
+
+  .container-video-text p {
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 10px auto 25px;
   }
 }

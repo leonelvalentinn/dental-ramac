@@ -9,12 +9,11 @@ button:hover {
 }
 .galery {
   width: 100%;
-  overflow-x: hidden;
 }
 .galery h2 {
   text-align: center;
   color: #2e2e2e;
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top: 12px;
   margin-bottom: 12px;
   padding-bottom: 15px;
@@ -22,75 +21,36 @@ button:hover {
 .galery h3 {
   text-align: center;
   color: #2e2e2e;
-  font-size: 1.4em;
+  font-size: 1em;
   margin-top: 12px;
 }
 .container-galery {
-  width: 90%;
+  width: 100%;
   display: grid;
+  padding: 0 1rem;
   grid-template-columns: repeat(2, 1fr);
-
-  grid-template-areas:
-    "item1 item2"
-    "item5 item6"
-    "item3 item4"
-    "item7 item8"
-    "item9 item10"
-    ;
+  place-content: center;
+  place-items: center;
   gap: 12px;
-  margin: 20px auto;
+  margin-bottom: 25px;
+}
+.item-galery {
+  width: 100%;
 }
 .item-galery button {
   display: block;
-  width: 170px;
   background-color: #0b518a;
   color: #fff;
   text-align: center;
   text-decoration: none;
   margin: auto;
   border: none;
-  padding: 12px;
-  font-size: 1em;
+  padding: 10px 15px;
+  font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .item-galery img {
   max-width: 100%;
-}
-.item-galery:nth-child(1) {
-  grid-area: item1;
-}
-.item-galery:nth-child(2) {
-  grid-area: item2;
-}
-.item-galery:nth-child(3) {
-  grid-area: item3;
-}
-.item-galery:nth-child(4) {
-  grid-area: item4;
-}
-.item-galery:nth-child(5) {
-  grid-area: item5;
-}
-.item-galery:nth-child(6) {
-  grid-area: item6;
-}
-.item-galery:nth-child(7) {
-  grid-area: item7;
-}
-.item-galery:nth-child(8) {
-  grid-area: item8;
-}
-.item-galery:nth-child(9) {
-  grid-area: item9;
-}
-.item-galery:nth-child(10) {
-  grid-area: item10;
-}
-.item-galery:nth-child(11) {
-  grid-area: item11;
-}
-.item-galery:nth-child(12) {
-  grid-area: item12;
 }
 .modal-atractions {
   width: 100%;
@@ -115,19 +75,19 @@ button:hover {
   width: 95%;
   height: 90%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px;
   border: 5px solid #0b518a;
+  overflow: auto;
 }
-.container-atractions img {
+.container-atractions > img {
   width: 100%;
   max-width: 270px;
   margin-bottom: 15px;
 }
 .container-atractions h2 {
-  font-size: 1.4em;
+  font-size: 1em;
   margin: 0px auto;
 }
 .container-atractions p {
@@ -145,26 +105,75 @@ button:hover {
   color: #fff;
   text-decoration: none;
   border-radius: 7px;
-  font-size: 1.1em;
-  transition: 1s;
+  font-size: 18px;
+  transition: all 0.275s linear;
+}
+.container-atractions a:hover {
+  transition: all 0.275s linear;
+  transform: scale(1.1);
+}
+.container-atractions div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.container-atractions div div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  max-width: 400px;
+}
+.general {
+  overflow-x: scroll;
+  width: 100%;
+  max-width: 1000px;
+  
+}
+.container-atractions div div:nth-last-child(1) {
+  margin-top: 25px;
+}
+.container-atractions div img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.container-atractions div h2 {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+.container-atractions div ul {
+  font-size: 15px;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
+  .container-atractions div div:nth-last-child(1) {
+    margin-top: 0px;
+  }
   .container-atractions a {
     display: block;
     margin: 10px auto;
-    width: 200px;
+    width: 170px;
     background-color: #0b518a;
     text-align: center;
     padding: 10px;
     color: #fff;
     text-decoration: none;
     border-radius: 7px;
-    font-size: 1.2em;
   }
   .galery h2 {
     text-align: center;
     color: #2e2e2e;
     font-size: 2.5em;
+  }
+  .galery h3 {
+    font-size: 1.5rem;
   }
   .container-galery {
     width: 90%;
@@ -219,7 +228,7 @@ button:hover {
   }
   .container-atractions {
     background-color: #fff;
-    width: 40%;
+    width: 80%;
     height: 90%;
     display: flex;
     justify-content: center;
@@ -227,14 +236,19 @@ button:hover {
     flex-direction: column;
     padding: 35px;
     border: 5px solid #0b518a;
+    max-width: 1000px;
   }
   .container-atractions h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0px auto;
+    max-width: 80%;
   }
   .container-atractions p {
     font-size: 0.6em;
     text-align: justify;
     font-weight: 400;
+  }
+  .container-atractions div {
+    flex-direction: row;
   }
 }
