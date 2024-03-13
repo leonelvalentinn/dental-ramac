@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import Scroll from 'react-scroll';
 import { useNavigate } from "react-router-dom";
 
-import Logo from "../assets/logo-2.png";
+import Logo from "../assets/logo-2.webp";
 import "../Styles/navbar.css";
 
 const Navbar = () => {

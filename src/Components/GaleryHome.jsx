@@ -1,96 +1,217 @@
 import { useState } from "react";
+// Import Swiper styles
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import "../Styles/galeryHome.css";
+// Import Swiper styles
+import 'swiper/css';
 import foto1 from "../assets/odontologia-preventiva.webp";
 import foto2 from "../assets/cirugia.webp";
 import foto3 from "../assets/implantologia.webp";
 import foto4 from "../assets/armonia.webp";
 import foto5 from "../assets/endodoncia-1.webp";
-import foto6 from "../assets/ortodoncia.jpg";
-import foto7 from "../assets/odontopediatria.jpg";
+import foto6 from "../assets/ortodoncia.webp";
+import foto7 from "../assets/odontopediatria.webp";
 import foto10 from "../assets/pathology.webp";
 import foto12 from "../assets/laboratorio.webp";
-
-import lab from "../assets/IMG_0236.jpg";
-import imp from "../assets/IMG_0212.jpg";
 import endo from "../assets/endodoncia-1.webp";
 import orto from "../assets/ortodoncia-1.jpg"
-import cir from "../assets/IMG_0184.jpg";
 import pato from "../assets/pato.webp";
+
+import marcela from "../assets/marcela.webp";
+import eduardo from "../assets/eduardo.webp";
+import edgar from "../assets/edgar.webp";
+import liliana from "../assets/liliana.webp";
+import alejandro from "../assets/alejandro.webp";
+import emiliano from "../assets/emiliano.webp";
+import nora from "../assets/nora.webp";
+import rodolfo from "../assets/rodolfo.webp";
+import azul from "../assets/azul.webp";
+import leon from "../assets/leon.webp";
+import valeria from "../assets/valeria.webp";
+import martha from "../assets/martha.webp"
 
 const GaleryHome = () => {
   const infoModal = [
     {
       id: 1,
+      name: "Rodolfo Uribe Castillo",
+      photo: rodolfo,
+      details: `<li>Universidad del Magdalena - Colombia</li>
+      <li>Odontólogo <strong>Ced. Prof. 1.082.985.066</strong></li>
+      <li>División de estudios de posgrado UNAM</li>
+      <li>Ortodoncia y ortopedia maxilofacial</li>`,
+      specialist: `<div className="item-amenidades">
+      <img src=${azul} alt="Foto de perfil de Azul" />
+      <h2>Azul M. González Gómez</h2>
+      <ul className="list-details">
+        <li>Facultad de odontología UNAM</li>
+        <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 10440497</strong></li>
+        <li>División de estudios de posgrado UNAM</li>
+        <li>Especialidad de Endodoncia</li>
+      </ul>
+    </div>`,
       img: pato,
       title: "Odontología Preventiva",
+      subtitle: "Conoce a nuestro especialista",
       info: "La odontología preventiva es todo cuidado dental que ayuda a mantener una buena salud oral. Es una combinación de chequeos dentales regulares y el desarrollo de buenos hábitos, como el cepillado y el uso del hilo dental.",
     },
     {
       id: 2,
+      name: "Martha G. Islas García",
+      photo: martha,
+      details: `<li>Facultad de Estudios Superiores Zaragoza. UNAM.</li>
+      <li>Licenciatura en Cirujana Dentista. <strong>Ced. Prof. 6991412</strong></li>
+      <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
+      <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
+      specialist: ``,
       img: foto1,
       title: "Rehabilitación Oral",
-      info: "La rehabilitación oral es un campo de la odontología que se especializa en la restauración inmediata de los dientes con el fin de recuperar la funcionalidad y la armonía estética.",
+      subtitle: "Conoce a nuestro especialista",
+      info: "Periodoncia es la rama de la odontología que se encarga de realizar los procedimientos para el acondicionamiento y restauración tanto en función cómo estética de los tejidos blandos de la boca para el proceso de colocación de un implante dental y son tratadas las enfermedad de la encía. El objetivo principal es evitar la pérdida de dientes y restaurar la salud bucal.",
     },
     {
       id: 3,
-      img: imp,
+      name: "G. Marcela Ramírez Macias",
+      photo: marcela,
+      details: `<li>Facultad de odontología UNAM</li>
+        <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 3239033</strong></li>
+        <li>División de estudios de posgrado UNAM </li>
+        <li>Especialidad en Protesis bucal e Implantología <strong>Ced. Prof. 3873209</strong></li>
+        <li>Profesor activo en Licenciatura F.O. UNAM</li>`,
+      specialist: `<div className="item-amenidades">
+      <img src=${valeria} alt="Dra. Valeria" />
+      <h2>Valeria A. Esparza Rodríguez</h2>
+        <ul className="list-details">
+          <li>Universidad Autónoma de Sinaloa </li>
+          <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 11343631</strong></li>
+          <li>Técnico ceramista dental</li>
+        </ul>
+      </div>`,
+      img: "",
       title: "Implantología",
-      info: "Es una disciplina odontológica que se dedica al reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante dental en el maxilar o la mandíbula. A día de hoy se considera una de las técnicas más eficaces de rehabilitación dental.",
+      subtitle: "Conoce a nuestro especialista",
+      info: "La prótesis bucal es la rama de la odontología que se encarga de devolver la función, anatomía, fonación y estética alteradas como consecuencia de la perdida de uno o mas dientes mientras que la implantología se  encarga del reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante.",
     },
     {
       id: 4,
+      name: "Liliana A. Camacho Aparicio",
+      photo: liliana,
+      specialist: `<div className="item-amenidades">
+        <img src=${azul} alt="Foto de perfil de Azul" />
+        <h2>Azul M. González Gómez</h2>
+        <ul className="list-details">
+          <li>Facultad de odontología UNAM</li>
+          <li>Lic. en Cirujano Dentista <strong>Ced. Prof.10440497</strong></li>
+          <li>División de estudios de posgrado UNAM</li>
+          <li>Especialidad de Endodoncia</li>
+        </ul>
+      </div>`,
+      details: `<li>Facultad de odontología UNAM</li>
+      <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 6345243</strong></li>
+      <li>División de estudios de posgrado UNAM </li>
+      <li>Especialidad en Endodoncia <strong>Ced. Prof. 09641210</strong></li>
+      <li>Maestría en Ciencias <strong>Ced. Prof. 12703822</strong></li>
+      <li>Profesor activo de Posgrado F.O. UNAM</li>`,
       img: endo,
       title: "Endodoncia",
-      info: "Es un tratamiento para dientes infectados o descompuestos gravemente cuya causa parte del nervio del diente.",
+      subtitle: "Conoce a nuestras especialistas",
+      info: "Endodoncia es la rama de la odontología que comprende la etiología, prevención, diagnostico, y tratamiento de las alteraciones patológicas de la pulpa dental y sus repercusiones en la región periapical.",
     },
 
     {
       id: 5,
+      name: "Nora E. Castillo Pérez",
+      photo: nora,
+      specialist: `<div className="item-amenidades">
+      <img src=${rodolfo} alt="Foto de perfil de Azul" />
+      <h2>Rodolfo Uribe Castillo</h2>
+            <ul className="list-details">
+              <li>Universidad del Magdalena - Colombia</li>
+              <li>Odontólogo <strong>Ced. Prof. 1.082.985.066</strong></li>
+              <li>División de estudios de posgrado UNAM</li>
+              <li>Ortodoncia y ortopedia maxilofacial</li>
+            </ul>
+    </div>`,
+      details: `<li>Facultad de odontología UNAM</li>
+      <li>Lic. en Cirujano Dentista <strong>Ced.Prof.5258208</strong></li>
+      <li>División de estudios de posgrado UNAM</li>
+      <li>Especialidad en ortodoncia <strong>Ced.Prof. 9627255</strong></li>`,
       img: orto,
       title: "Ortodoncia",
-      info: "Es una especialidad odontológica que estudia, previene y corrige las alteraciones del desarrollo, las formas de las arcadas dentarias y la posición de los maxilares, con el fin de restablecer el equilibrio morfológico y funcional de la boca y de la cara, mejorando también la estética facial.",
+      subtitle: "Conoce a nuestros especialistas",
+      info: "La ortodoncia es el área de la odontología que previene y corrige la malposición de los dientes, el crecimiento de los maxilares y favorece la estética facial y dental.",
     },
     {
       id: 6,
+      name: "Edgar E. Rosas Chacón",
+      photo: edgar,
+      specialist: ``,
+      details: `<li>Facultad de odontología UNAM</li>
+        <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 08735069</strong></li>
+        <li>División de estudios de posgrado UNAM </li>
+        <li>Especialidad en Odontopediatría <strong>Ced. Prof. 12245361</strong></li>
+        <li>Centro de Estudios de Posgrado en Ortodoncia Valle de Anáhuac</li>
+        <li>Especialidad en Ortodoncia y Ortopedia maxilofacial</li>
+        <li>Profesor activo de Posgrado F.O. UNAM</li>`,
       img: foto7,
       title: "Odontopediatría",
-      info: "Es la especialidad odontológica que proporciona cuidados terapéuticos y preventivos referentes a la salud bucodental de bebés y niños hasta la edad adolescente, incluyendo aquellos que requieran de necesidades especiales.",
+      subtitle: "Conoce a nuestro especialista",
+      info: "Es la rama de la odontología encargada del manejo de la salud dental de los niños, etapa en la cual se puede prevenir y diagnosticar de forma temprana alguna patología o alteración dental, así como prevención de caries dentales, enfermedad periodontal y maloclusiones.",
     },
     {
       id: 7,
-      img: cir,
-      title: "Cirugía Bucal",
-      info: "Hace referencia a cualquier procedimiento quirúrgico en la boca y la mandíbula o alrededor de estas, generalmente hecho por un especialista dental capacitado para realizar ciertos tipos de cirugías orales.",
+      name: "Alejandro Alonso Moctezuma",
+      photo: alejandro,
+      details: `<li>Facultad de odontología UNAM</li>
+      <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 4833472</strong></li>
+      <li>División de estudios de posgrado UNAM</li>
+      <li>Especialidad en Cirugía oral y Maxilofacial <strong>Ced. Prof. 7876057</strong></li>
+      <li>Maestría en Ciencias <strong>Ced. Prof. 09698489</strong></li>
+      <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
+      <li>Profesor activo de Posgrado FO. UNAM</li>`,
+      specialist: ``,
+      img: "",
+      title: "Cirugía Oral",
+      subtitle: "Conoce a nuestro especialista",
+      info: "Especialidad de la Odontología que ofrece a la población, alternativas de tratamiento médico y quirúrgico a diferentes problemas de salud, entre los que se encuentran los defectos congénitos como el labio y el paladar fisurados, las disarmonías del desarrollo facial, los traumatismos de la región oral y maxilofacial, las alteraciones de la articulación temporomandibular, los quistes y los tumores odontogénicos, las infecciones de origen dental; utilizando para su manejo  distintos tratamientos quirúrgicos como Cirugía Ortognática, la reducción y fijación de fracturas del esqueleto facial, el uso de distractores osteogénicos, la reconstrucción del esqueleto facial mediante la toma y colocación de injertos intra y extraorales, la regeneración tisular guiada, a colocación de implantes dentales y cigomáticos, etc.",
     },
     {
       id: 8,
+      name: "Emiliano Jurado Castañeda",
+      photo: emiliano,
+      details: `<li>Facultad de odontología UNAM</li>
+      <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 6257690</strong></li>
+      <li>División de estudios de posgrado UNAM </li>
+      <li>Especialista en patología bucal <strong>Ced. Prof. 10590811</strong></li>
+      <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
+      <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
       img: pato,
+      specialist: ``,
       title: "Patología Bucal",
-      info: "Es el área de la odontología y la disciplina de la patología que se ocupa del origen, la identificación y la solución de las enfermedades orales que atentan a la boca y los dientes.",
+      subtitle: "Conoce a nuestro especialista",
+      info: "Atendemos casos de condición, lesiones y enfermedades que se desarrollan en la región Bucal y Maxilofacial. Realizamos cirugía de biopsia incisionales y exisionales para el diagnóstico y tratamiento específico.",
     },
     {
       id: 9,
-      img: lab,
+      name: "León E. Moreno Villada",
+      photo: leon,
+      details: `<li>CETIS 57 Ignacio Allende </li>
+      <li>Laboratorista dental</li>
+      <li><strong>Ced. Prof. 8624711</strong></li>`,
+      specialist: `<div className="item-amenidades">
+      <img src=${eduardo} alt="" />
+      <h2>Eduardo Llanos López</h2>
+        <ul className="list-details">
+          <li>Facultad de odontología UNAM</li>
+          <li>Lic. en Cirujano Dentista</li>
+          <li><strong>Ced. Prof. 13356225</strong></li>
+        </ul>
+    </div>`,
+      img: "",
       title: "Laboratorio Dental",
-      info: "Contamos con laboratorio dental en nuestra clinica, esto hace que tu tratamiento sea más rápido y eficiente.",
-    },
-    {
-      id: 10,
-      img: lab,
-      title: "Disfruta de la rica comida de la zona",
-      info: "Como todo México tenemos la fortuna de tener una gran variedad de sabores , en tequesquitengo no es la excepción, ven y disfruta de toda la variedad de platillos.",
-    },
-    {
-      id: 11,
-      img: lab,
-      title: " Conocer la zona arqueológica de Xochicalco",
-      info: "La zona arqueológica de Xochicalco ha sido declarada como Patrimonio de la Humanidad por la UNESCO, está ubicada a tan sólo 33 minutos de Tequesquitengo, en el estado de Morelos. En este lugar podrás ver el museo que con múltiples exposiciones relata la cultura que creó esta ciudad precolombina, entre sus construcciones están el juego de pelota y el observatorio astronómico.",
-    },
-    {
-      id: 12,
-      img: lab,
-      title: "Ir al pueblo mágico de Tepoztlán ",
-      info: "Tepoztlán es una de las ciudades coloniales más atractivas de México. Está situada en un valle de montaña a 50 minutos de Tequequitengo. Esta región tiene volcanes cercanos, ríos y cascadas. Pero también muestra una mezcla de la época colonial y nuestra cultura indígena. Entre los sitios turísticos de esta ciudad se encuentran el Museo del ex Convento Dominico de La Natividad, la pirámide de la cima de la montaña, el mercado de artesanos que se instala todos los fines de semana y una multitud de sitios históricos y paisajes fuera de este mundo. ",
+      subtitle: "Conoce a nuestros especialistas",
+      info: "El laboratorista dental se dedica a la fabricación de prótesis dentales fijas o removibles, como coronas dentales, coronas sobre pilares de implantes, pilares de implantes, dentaduras totales o parciales, etc. a partir de un tratamiento especifico indicado por el odontólogo, con la finalidad de ayudar a devolver la función al paciente o bien corregir la estética dental de dicho paciente.",
     },
   ];
 
@@ -102,17 +223,26 @@ const GaleryHome = () => {
     let evento = e.target.id;
     modalOpen(evento);
   };
-
   const modalOpen = (evento) => {
     let atraction = document.getElementById("container-atractions");
-    atraction.innerHTML = "";
+    atraction.innerHTML = '';
     infoModal
       .filter((texto) => texto.id == evento)
       .map((texto) => {
-        atraction.innerHTML += `
-        <img src=${texto.img} alt=""/>
+        let HTMLinsert = `
         <h2 id="title-modal">${texto.title}<h2/>
         <p id="texto-modal">${texto.info}<p/>
+        <h2>${texto.subtitle}</h2>
+        <div>
+          <div className="item-amenidades">
+            <img src=${texto.photo} alt="" />
+            <h2>${texto.name}</h2>
+            <ul className="list-details">
+              ${texto.details}
+            </ul>
+          </div>
+          ${texto.specialist}
+        </div>
         <a
             href="https://api.whatsapp.com/send?phone=525544754479"
             target="_blank"
@@ -121,9 +251,10 @@ const GaleryHome = () => {
             Contacto
           </a>
         `;
+        atraction.insertAdjacentHTML('afterbegin', HTMLinsert);
+        HTMLinsert = "";
       });
   };
-
   return (
     <div className="galery" id="servicios">
       <h2> Servicios y Especialidades</h2>
@@ -150,7 +281,7 @@ const GaleryHome = () => {
           </button>
         </div>
         <div className="item-galery">
-        <h3>Cirugía Bucal</h3>
+        <h3>Cirugía Oral</h3>
           <img src={foto2} alt="" />
           <button className="btn-mas" id="7" onClick={(e) => openModal(e)}>
             Ver más
@@ -218,7 +349,9 @@ const GaleryHome = () => {
         id="modal-atractions"
         onClick={() => setIsModal(!isModal)}
       >
-        <div className="container-atractions" id="container-atractions"></div>
+        <div className="container-atractions" id="container-atractions">
+
+        </div>
       </div>
     </div>
   );

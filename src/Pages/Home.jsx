@@ -2,7 +2,7 @@ import Hero from "../Components/Hero";
 import About from "../Components/About";
 import GaleryHome from "../Components/GaleryHome";
 import VideoGround from "../Components/VideoGround";
-import Amenidades from "../Components/Amenidades";
+// import Amenidades from "../Components/Amenidades";
 import RenderFotos from "../Components/RenderFotos";
 import Navbar from "../Components/Navbar";
 
@@ -12,7 +12,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      <Amenidades />
+      {/* <Amenidades /> */}
       <RenderFotos />
       <GaleryHome />
       <VideoGround />

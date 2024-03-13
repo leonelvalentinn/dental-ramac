@@ -12,7 +12,6 @@ import { Autoplay, EffectFade } from "swiper";
 import Slider1 from "../assets/IMG_0145.webp";
 import Slider2 from "../assets/hero-1.webp";
 import Slider3 from "../assets/hero-3.webp";
-import Slider4 from "../assets/hero-2.webp";
 
 import ButtonContact from "./ButtonContact";
 
@@ -61,7 +60,7 @@ const Hero = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={Slider4} className="img-slider" />
           <div className="container-text">
             <div className="text-slider">
@@ -69,7 +68,7 @@ const Hero = () => {
               <ButtonContact />
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

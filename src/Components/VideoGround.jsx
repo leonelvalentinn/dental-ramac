@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "../Styles/video.css";
 import Video from "../assets/background-1.mp4";
 import Video1 from "../assets/background-mobile.mp4";

@@ -22,11 +22,9 @@ import { Swiper, SwiperSlide, useSwiper  } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
-
+/*breakpoints={{768: {slidesPerView:3}}}*/
 
 const Amenidades = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   const [visibleA, setVisibleA] = useState(false);
   const [visibleB, setVisibleB] = useState(false);
   const [visibleC, setVisibleC] = useState(false);
@@ -40,6 +38,7 @@ const Amenidades = () => {
   const [visibleK, setVisibleK] = useState(false);
   const [visibleL, setVisibleL] = useState(false);
   const swiper = useSwiper();
+
   console.log(swiper);
   return (
     <div className="amenidades">
@@ -54,11 +53,10 @@ const Amenidades = () => {
             prevEl: '.review-swiper-button-prev',
           }}
           loop
-          breakpoints={{768: {slidesPerView:3}}}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
-          <SwiperSlide className={`${isOpen ? "none" : ""}`}>
+          <SwiperSlide className="">
             <div className="item-amenidades">
               <img src={area2} alt="" />
               <h2>G. Marcela Ramírez Macias</h2>

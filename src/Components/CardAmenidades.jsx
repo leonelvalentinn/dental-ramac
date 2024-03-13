@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../Styles/card-amenidades.css";
+import promo2 from "../assets/promo-2.webp";
+import promo1 from "../assets/promo-1.webp";
 
 
 const CardAmenidades = () => {
@@ -108,13 +110,18 @@ const CardAmenidades = () => {
   };
   return (
     <div className="card-amenidades">
-      {/*<h2>Promociones exclusivas para ti</h2>
+      <h2>Promociones exclusivas para ti</h2>
       <div className="container-card-amenidades">
         <div className="item-promo">
-          <img src={promo2} alt="Promoción 1" />
+          <img src={promo1} alt="Promoción 1" />
           <a href="https://wa.me/525544754479?text=Buenas tardes, solicito información sobre la limpieza dental" className="btn-header-contacto">Agenda tu cita</a>
         </div>
+        <div className="item-promo">
+          <img src={promo2} alt="Promoción 1" />
+          <a href="https://wa.me/525544754479?text=Buenas tardes, solicito información sobre la promoción de resinas" className="btn-header-contacto">Agenda tu cita</a>
+        </div>
       </div>
+      {/*
       <p className="text-desc">
         Pon el cursor sobre la imagen para ver más información
       </p>

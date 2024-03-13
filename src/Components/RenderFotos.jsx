@@ -1,11 +1,11 @@
 
 import "../Styles/render-fotos.css";
-import Render1 from "../assets/IMG_0112.jpg";
+import Render1 from "../assets/IMG_0112.webp";
 import Render6 from "../assets/hero-1.webp";
 import Render5 from "../assets/station-1.webp";
 import Render4 from "../assets/station-2.webp";
 import Render3 from "../assets/station-3.webp";
-import Render2 from "../assets/IMG_0119.jpg";
+import Render2 from "../assets/IMG_0119.webp";
 
 const RenderFotos = () => {
   return (
