@@ -1,7 +1,7 @@
 
 import "../Styles/render-fotos.css";
 import Render1 from "../assets/IMG_0112.webp";
-import Render6 from "../assets/hero-1.webp";
+import Render6 from "../assets/sucursal.webp";
 import Render5 from "../assets/station-1.webp";
 import Render4 from "../assets/station-2.webp";
 import Render3 from "../assets/station-3.webp";

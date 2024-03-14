@@ -27,7 +27,6 @@ import emiliano from "../assets/emiliano.webp";
 import nora from "../assets/nora.webp";
 import rodolfo from "../assets/rodolfo.webp";
 import azul from "../assets/azul.webp";
-import leon from "../assets/leon.webp";
 import valeria from "../assets/valeria.webp";
 import martha from "../assets/martha.webp"
 
@@ -194,23 +193,15 @@ const GaleryHome = () => {
     },
     {
       id: 9,
-      name: "León E. Moreno Villada",
-      photo: leon,
-      details: `<li>CETIS 57 Ignacio Allende </li>
-      <li>Laboratorista dental</li>
-      <li><strong>Ced. Prof. 8624711</strong></li>`,
-      specialist: `<div className="item-amenidades">
-      <img src=${eduardo} alt="" />
-      <h2>Eduardo Llanos López</h2>
-        <ul className="list-details">
-          <li>Facultad de odontología UNAM</li>
-          <li>Lic. en Cirujano Dentista</li>
-          <li><strong>Ced. Prof. 13356225</strong></li>
-        </ul>
-    </div>`,
+      name: "Eduardo Llanos López",
+      photo: eduardo,
+      details: `<li>Facultad de odontología UNAM</li>
+      <li>Lic. en Cirujano Dentista</li>
+      <li><strong>Ced. Prof. 13356225</strong></li>`,
+      specialist: ``,
       img: "",
       title: "Laboratorio Dental",
-      subtitle: "Conoce a nuestros especialistas",
+      subtitle: "Conoce a nuestro especialista",
       info: "El laboratorista dental se dedica a la fabricación de prótesis dentales fijas o removibles, como coronas dentales, coronas sobre pilares de implantes, pilares de implantes, dentaduras totales o parciales, etc. a partir de un tratamiento especifico indicado por el odontólogo, con la finalidad de ayudar a devolver la función al paciente o bien corregir la estética dental de dicho paciente.",
     },
   ];

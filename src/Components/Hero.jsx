@@ -10,8 +10,8 @@ import "swiper/css/effect-fade";
 // import required modules
 import { Autoplay, EffectFade } from "swiper";
 import Slider1 from "../assets/IMG_0145.webp";
-import Slider2 from "../assets/hero-1.webp";
-import Slider3 from "../assets/hero-3.webp";
+import Slider2 from "../assets/IMG_8526.webp";
+import Slider3 from "../assets/hero-4.webp";
 
 import ButtonContact from "./ButtonContact";
 

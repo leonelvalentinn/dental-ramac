@@ -11,7 +11,7 @@ const About = () => {
         <div className="item-about">
           <h4>Conócenos</h4>
           <p>
-            Somos una clínica dental com más de 20 años de experiencia. Nuestra misión es proporcionar a nuestros 
+            Somos una clínica dental con más de 20 años de experiencia. Nuestra misión es proporcionar a nuestros 
             pacientes atención dental de vanguardia, 
             utilizando tecnología de última generación y un equipo de profesionales altamente capacitados. 
             Siempre esforzándonos por mejorar tu salud bucal.
