@@ -12,6 +12,19 @@
   height: 60px;
   object-fit: cover;
 }
+
+.button-contact {
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #0b518a;
+  color: white;
+  transition: transform 0.25s linear;
+  text-decoration: none;
+}
+.button-contact:hover {
+  transform: scale(1.1);
+  transition: transform 0.25s linear;
+}
 @media (min-width: 768px) {
   .botones a img {
     width: 80px;
