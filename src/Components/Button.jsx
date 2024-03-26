@@ -1,15 +1,15 @@
 import "../Styles/botones.css"
 
-const Button = () => {
+const Button = ({ children, WhatsApp }) => {
 
   return (
     <a
       href="https://api.whatsapp.com/send?phone=525544754479"
       target="_blank"
-      className="button-contact"
+      className={`button-contact ${WhatsApp ? "whatsapp" : ""}`}
       rel="noopener noreferrer"
     >
-      Contacto
+      {children ? children : "Contacto"}
     </a>
   );
 } 

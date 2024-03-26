@@ -19,6 +19,7 @@ import foto6 from "../assets/ortodoncia.webp";
 import foto7 from "../assets/odontopediatria.webp";
 import foto10 from "../assets/pathology.webp";
 import foto12 from "../assets/laboratorio.webp";
+import foto13 from "../assets/periodoncia.webp"
 import marcela from "../assets/marcela.png"
 import rodolfo from "../assets/rodolfo.png";
 import liliana from "../assets/liliana.webp";
@@ -388,65 +389,108 @@ const SliderF = () => {
         },
     ]
     },
+    {
+      id: 11,
+      infoSlider: [
+        {
+          id: 2,
+          photo: martha,
+          name: 'Martha G. Islas García',
+          list: `<li>Facultad de Estudios Superiores Zaragoza. UNAM.</li>
+          <li>Licenciatura en Cirujana Dentista. <strong>Ced. Prof. 6991412</strong></li>
+          <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
+          <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
+          visible: visibleF,
+          textV: `${visibleF ? "Ver menos" : "Ver más"} `
+        },
+        {
+          id: 6,
+          photo: emiliano,
+          name: 'Emiliano Jurado Castañeda',
+          list: `<li>Facultad de odontología UNAM</li>
+          <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 6257690</strong></li>
+          <li>División de estudios de posgrado UNAM </li>
+          <li>Especialista en patología bucal <strong>Ced. Prof. 10590811</strong></li>
+          <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
+          <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
+          visible: visibleJ,
+          textV: `${visibleJ ? "Ver menos" : "Ver más"} `
+        },
+    ]
+    },
   ]
   const infoModal = [
     {
       id: 1,
+      img: foto1,
       title: "Odontología Preventiva",
       subtitle: "Conoce a nuestros especialistas",
       info: "La odontología preventiva es todo cuidado dental que ayuda a mantener una buena salud oral. Es una combinación de chequeos dentales regulares y el desarrollo de buenos hábitos, como el cepillado y el uso del hilo dental.",
     },
     {
       id: 2,
+      img: foto4,
       title: "Rehabilitación Oral",
-      subtitle: "Conoce a nuestro especialista",
+      subtitle: "Conoce a nuestros especialistas",
       info: "Periodoncia es la rama de la odontología que se encarga de realizar los procedimientos para el acondicionamiento y restauración tanto en función cómo estética de los tejidos blandos de la boca para el proceso de colocación de un implante dental y son tratadas las enfermedad de la encía. El objetivo principal es evitar la pérdida de dientes y restaurar la salud bucal.",
     },
     {
       id: 3,
+      img: foto3,
       title: "Implantología",
-      subtitle: "Conoce a nuestro especialista",
+      subtitle: "Conoce a nuestros especialistas",
       info: "La prótesis bucal es la rama de la odontología que se encarga de devolver la función, anatomía, fonación y estética alteradas como consecuencia de la perdida de uno o mas dientes mientras que la implantología se  encarga del reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante.",
     },
     {
       id: 4,
+      img: foto5,
       title: "Endodoncia",
       subtitle: "Conoce a nuestras especialistas",
       info: "Endodoncia es la rama de la odontología que comprende la etiología, prevención, diagnostico, y tratamiento de las alteraciones patológicas de la pulpa dental y sus repercusiones en la región periapical.",
     },
-
     {
       id: 5,
+      img: foto6,
       title: "Ortodoncia",
       subtitle: "Conoce a nuestros especialistas",
       info: "La ortodoncia es el área de la odontología que previene y corrige la malposición de los dientes, el crecimiento de los maxilares y favorece la estética facial y dental.",
     },
     {
       id: 6,
+      img: foto7,
       title: "Odontopediatría",
       subtitle: "Conoce a nuestro especialista",
       info: "Es la rama de la odontología encargada del manejo de la salud dental de los niños, etapa en la cual se puede prevenir y diagnosticar de forma temprana alguna patología o alteración dental, así como prevención de caries dentales, enfermedad periodontal y maloclusiones.",
     },
     {
       id: 7,
+      img: foto2,
       title: "Cirugía Oral",
-      subtitle: "Conoce a nuestro especialista",
+      subtitle: "Conoce a nuestros especialistas",
       info: "Especialidad de la Odontología que ofrece a la población, alternativas de tratamiento médico y quirúrgico a diferentes problemas de salud, entre los que se encuentran los defectos congénitos como el labio y el paladar fisurados, las disarmonías del desarrollo facial, los traumatismos de la región oral y maxilofacial, las alteraciones de la articulación temporomandibular, los quistes y los tumores odontogénicos, las infecciones de origen dental; utilizando para su manejo  distintos tratamientos quirúrgicos como Cirugía Ortognática, la reducción y fijación de fracturas del esqueleto facial, el uso de distractores osteogénicos, la reconstrucción del esqueleto facial mediante la toma y colocación de injertos intra y extraorales, la regeneración tisular guiada, a colocación de implantes dentales y cigomáticos, etc.",
     },
     {
       id: 8,
+      img: foto10,
       title: "Patología Bucal",
       subtitle: "Conoce a nuestro especialista",
       info: "Atendemos casos de condición, lesiones y enfermedades que se desarrollan en la región Bucal y Maxilofacial. Realizamos cirugía de biopsia incisionales y exisionales para el diagnóstico y tratamiento específico.",
     },
     {
       id: 9,
+      img: foto12,
       title: "Laboratorio Dental",
-      subtitle: "Conoce a nuestro especialista",
+      subtitle: "Conoce a nuestros especialistas",
       info: "El laboratorista dental se dedica a la fabricación de prótesis dentales fijas o removibles, como coronas dentales, coronas sobre pilares de implantes, pilares de implantes, dentaduras totales o parciales, etc. a partir de un tratamiento especifico indicado por el odontólogo, con la finalidad de ayudar a devolver la función al paciente o bien corregir la estética dental de dicho paciente.",
     },
+    {
+      id: 10,
+      img: foto13,
+      title: "Periodoncia",
+      subtitle: "Conoce a nuestros especialistas",
+      info: "La periodoncia es la rama de la Odontología que trata las enfermedades de las encías y del hueso que sostiene los dientes. Y es que las enfermedades de las encías como la gingivitis y periodontitis son de las causas más comunes de pérdida de dientes, y su control es fundamental. ",
+    },
   ];
-
   const visibleInfo = (e) => {
     switch (e) {
       case 1:
@@ -490,16 +534,15 @@ const SliderF = () => {
     }
   }
   const InfoModal = () => {
-      // console.log(infoMU)
-      return (
-        <>
-          <h5>{infoModal[infoMU].title}</h5>
-          <p>{infoModal[infoMU].info}</p>
-          <p><span>{infoModal[infoMU].subtitle}</span></p>
-        </>
-      )
-    }
-
+    // console.log(infoMU)
+    return (
+      <>
+        <h5>{infoModal[infoMU].title}</h5>
+        <p>{infoModal[infoMU].info}</p>
+        <p><span>{infoModal[infoMU].subtitle}</span></p>
+      </>
+    )
+  }
   function openModal (e) {
     setIsModal(true);
     idRender = e.target.id;
@@ -514,80 +557,26 @@ const SliderF = () => {
     setIsModal(false);
   } 
 
-
   return (
     <div className="amenidades">
       <div className="galery" id="servicios">
       <h2> Servicios y Especialidades</h2>
       <div className="container-galery">
-        <div className="item-galery">
-          <h3>Odontología Preventiva</h3>
-          <img src={foto1} alt="" />
-          <button className="btn-mas" id="1" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
-        <div className="item-galery">
-        <h3>Rehabilitación Oral</h3>
-          <img src={foto4} alt="" />
-          <button className="btn-mas" id="2" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
-        <div className="item-galery">
-        <h3>Implantología </h3>
-          <img src={foto3} alt="" />
-          <button className="btn-mas" id="3" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
-        <div className="item-galery">
-        <h3>Cirugía Oral</h3>
-          <img src={foto2} alt="" />
-          <button className="btn-mas" id="7" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
-        <div className="item-galery">
-        <h3>Endodoncia </h3>
-          <img src={foto5} alt="" />
-          <button className="btn-mas" id="4" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
-        <div className="item-galery">
-        <h3>Ortodoncia </h3>
-          <img src={foto6} alt="" />
-          <button className="btn-mas" id="5" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
-        <div className="item-galery">
-        <h3>Odontopediatría </h3>
-          <img src={foto7} alt="" />
-          <button className="btn-mas" id="6" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
-        <div className="item-galery">
-          <h3>Patología Bucal</h3>
-          <img src={foto10} alt="" />
-          <button className="btn-mas" id="8" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
-        <div className="item-galery">
-        <h3>Laboratorio Dental</h3>
-          <img src={foto12} alt="" />
-          <button className="btn-mas" id="9" onClick={(e) => openModal(e)}>
-            Ver más
-          </button>
-        </div>
+        {
+          infoModal.map((item) => (
+            <div className="item-galery" key={item.id}>
+            <h3>{item.title}</h3>
+              <img src={item.img} alt={item.title} />
+              <button className="btn-mas" id={item.id} onClick={(e) => openModal(e)}>
+                Ver más
+              </button>
+            </div>
+          ))
+        }
       </div> 
       <div
         className={`modal-atractions ${isModal ? "popup" : ""} `}
         id="modal-atractions"
-        
       >
         <div className="container-atractions" id="container-atractions">
           <button className='btn-close' onClick={() => closeModal()}>

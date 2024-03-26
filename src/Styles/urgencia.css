@@ -1,0 +1,35 @@
+.container-urgencia {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 67, 36);
+  margin-top: 40px;
+  padding: 20px 1rem;
+}
+.container-urgencia article {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-urgencia article h3 {
+  font-size: 1.5rem;
+  margin-top: 0 !important;
+}
+.container-urgencia article p {
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .container-urgencia article h3 {
+    font-size: 2rem;
+  }
+  .container-urgencia article p {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+}

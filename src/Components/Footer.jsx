@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../Styles/footer.css";
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <div className="footer">
       <div className="container-footer">
@@ -17,7 +18,7 @@ const Footer = () => {
           <div>
             <h3>Horario</h3>
             <p>
-            Lunes a Viernes de 9:30 a 2:00pm y 3:30 a 7:00 pm <br />
+            Lunes a Viernes de 9:30 a 2:00pm y 4:00 a 7:00 pm <br />
             Sábados de 9:00 a 2:00 pm
             </p>
           </div>
@@ -45,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="sub-item-footer">
-          <img src={LogoFooter} alt="" className="logo-footer" />
+          <img src={LogoFooter} alt="Logotipo de Dental Ramac" className="logo-footer" />
         </div>
         <div className="sub-item-footer">
           <h2>Síguenos</h2>
@@ -68,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-finaly">
-        <p>© 2023 Todos los derechos reservados Dental Ramac.</p>
+        <p>© {year} Todos los derechos reservados Dental Ramac.</p>
         <p>Desarrollado por Agencia Dentarios </p>
       </div>
     </div>

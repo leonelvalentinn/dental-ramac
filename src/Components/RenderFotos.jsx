@@ -14,29 +14,23 @@ const RenderFotos = () => {
       {/*<p>Imágenes de render</p>*/}
       <div className="container-render-fotos">
         <div className="item-render-fotos">
-          <img src={Render1} alt="Fachada Dental Ramac" />
+          <img src={Render1} alt="Fachada Dental Ramac" decoding="async" loading="lazy"/>
         </div>
         <div className="item-render-fotos">
-          <img src={Render2} alt="Sala de espera" />
+          <img src={Render2} alt="Sala de espera" decoding="async" loading="lazy"/>
         </div>
         <div className="item-render-fotos">
-          <img src={Render3} alt="Sala de espera" />
+          <img src={Render3} alt="Sala de espera" decoding="async" loading="lazy"/>
         </div>
         <div className="item-render-fotos">
-          <img src={Render4} alt="Consultorio de la Dra. Nora" />
+          <img src={Render4} alt="Consultorio de la Dra. Nora" decoding="async" loading="lazy"/>
         </div>
         <div className="item-render-fotos">
-          <img src={Render5} alt="Vista general de las estaciones de servicio" />
+          <img src={Render5} alt="Vista general de las estaciones de servicio" decoding="async" loading="lazy"/>
         </div>
         <div className="item-render-fotos">
-          <img src={Render6} alt="Estación de servicios" />
+          <img src={Render6} alt="Estación de servicios" decoding="async" loading="lazy"/>
         </div>
-        {/*<div className="item-render-fotos">
-          <img src={Render7} alt="" />
-        </div>
-        <div className="item-render-fotos">
-          <img src={Render8} alt="" />
-        </div>*/}
       </div>
     </div>
   );

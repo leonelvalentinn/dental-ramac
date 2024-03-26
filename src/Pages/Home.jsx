@@ -4,6 +4,7 @@ import VideoGround from "../Components/VideoGround";
 import RenderFotos from "../Components/RenderFotos";
 import Navbar from "../Components/Navbar";
 import SliderF from "../Components/SliderF";
+import { Urgencias } from "../Components/Urgencias";
 // import Amenidades from "../Components/Amenidades";
 // import GaleryHome from "../Components/GaleryHome";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Hero />
       <About />
       <RenderFotos />
+      <Urgencias />
       <SliderF />
       {/* <GaleryHome /> */}
       {/* <Amenidades />  */}

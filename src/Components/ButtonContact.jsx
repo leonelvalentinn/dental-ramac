@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../Styles/button-contact.css";
 
 function ButtonContact() {
@@ -8,6 +8,7 @@ function ButtonContact() {
         href="https://api.whatsapp.com/send?phone=525544754479"
         target="_blank"
         className="button-contact"
+        rel="noopener noreferrer"
       >
         Contáctanos
       </a>

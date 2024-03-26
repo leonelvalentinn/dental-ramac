@@ -23,6 +23,7 @@ button {
 }
 .item-galery {
   width: 100%;
+  max-width: 450px;
 }
 .item-galery button {
   display: block;
@@ -35,6 +36,12 @@ button {
   padding: 10px 15px;
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+.item-galery button:hover {
+  transition: transform 0.2s linear;
+  transform: scale(1.09);
 }
 .item-galery img {
   max-width: 100%;
@@ -68,6 +75,7 @@ button {
   border: 5px solid #0b518a;
   overflow: auto;
   position: relative;
+  z-index: 999999;
 }
 
 .general {
@@ -87,12 +95,12 @@ button {
   .container-galery {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
     grid-template-areas:
-      "item1 item2 item3"
-      "item5 item6 item7"
-      "item4 item8 item9";
+    "item1 item1 item2 item2 item3 item3"
+    "item4 item4 item4 item5 item5 item5"
+    "item6 item6 item7 item7 item8 item8"
+    "item9 item9 item9 item10 item10 item10";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 12px;
     margin: 12px auto;
   }
@@ -110,9 +118,11 @@ button {
   }
   .item-galery:nth-child(4) {
     grid-area: item4;
+    max-width: 450px;
   }
   .item-galery:nth-child(5) {
     grid-area: item5;
+    max-width: 450px;
   }
   .item-galery:nth-child(6) {
     grid-area: item6;
@@ -128,12 +138,6 @@ button {
   }
   .item-galery:nth-child(10) {
     grid-area: item10;
-  }
-  .item-galery:nth-child(11) {
-    grid-area: item11;
-  }
-  .item-galery:nth-child(12) {
-    grid-area: item12;
   }
   .container-atractions {
     background-color: #fff;

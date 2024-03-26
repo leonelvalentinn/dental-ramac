@@ -64,7 +64,7 @@ const NavBarPro = () => {
     <div className={`navbar ${isNavbar ? "back" : ""}`} id="navbar">
       <div className="container-navbar">
         <div className="logo-container">
-          <img src={Logo} alt="" className="logo" />
+          <img src={Logo} alt="Logotipo de Dental Ramac" className="logo" />
         </div>
 
         <nav className={`menu ${isOpen ? "open" : ""}`}>

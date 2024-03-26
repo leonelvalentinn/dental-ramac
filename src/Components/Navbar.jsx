@@ -56,7 +56,7 @@ const Navbar = () => {
           duration={500}
           className="menu-link"
         >
-          <img src={Logo} alt="" className="logo" />
+          <img src={Logo} alt="Logotipo de Dental Ramac" className="logo" />
         </Link>
         </div>
 
