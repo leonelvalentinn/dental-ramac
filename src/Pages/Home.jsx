@@ -1,10 +1,11 @@
 import Hero from "../Components/Hero";
 import About from "../Components/About";
-import GaleryHome from "../Components/GaleryHome";
 import VideoGround from "../Components/VideoGround";
-// import Amenidades from "../Components/Amenidades";
 import RenderFotos from "../Components/RenderFotos";
 import Navbar from "../Components/Navbar";
+import SliderF from "../Components/SliderF";
+// import Amenidades from "../Components/Amenidades";
+// import GaleryHome from "../Components/GaleryHome";
 
 const Home = () => {
   return (
@@ -12,9 +13,10 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      {/* <Amenidades /> */}
       <RenderFotos />
-      <GaleryHome />
+      <SliderF />
+      {/* <GaleryHome /> */}
+      {/* <Amenidades />  */}
       <VideoGround />
     </div>
   );
