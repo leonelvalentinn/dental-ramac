@@ -96,11 +96,11 @@ button {
     width: 90%;
     display: grid;
     grid-template-areas:
-    "item1 item1 item2 item2 item3 item3"
-    "item4 item4 item4 item5 item5 item5"
-    "item6 item6 item7 item7 item8 item8"
-    "item9 item9 item9 item10 item10 item10";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9"
+    "item10 item10 item10";
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
     margin: 12px auto;
   }
