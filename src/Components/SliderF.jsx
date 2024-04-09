@@ -1,57 +1,56 @@
-//Components
-import { useState } from "react";
-import { CCollapse, CCard, CCardBody, CButton  } from '@coreui/react'
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import Button from './Button';
+// Components
+import { useState } from 'react'
+import { CCollapse, CCard, CCardBody, CButton } from '@coreui/react'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
+import Button from './Button'
 
-//Styles
-import '@splidejs/react-splide/css';
-import "../Styles/amenidades.css";
-import "../Styles/galeryHome.css";
+// Styles
+import '@splidejs/react-splide/css'
+import '../Styles/amenidades.css'
+import '../Styles/galeryHome.css'
 
-//Images
-import foto1 from "../assets/odontologia-preventiva.webp";
-import foto2 from "../assets/cirugia.webp";
-import foto3 from "../assets/implantologia.webp";
-import foto4 from "../assets/armonia.webp";
-import foto5 from "../assets/endodoncia-1.webp";
-import foto6 from "../assets/ortodoncia.webp";
-import foto7 from "../assets/odontopediatria.webp";
-import foto10 from "../assets/pathology.webp";
-import foto12 from "../assets/laboratorio.webp";
-import foto13 from "../assets/periodoncia.webp"
-import marcela from "../assets/marcela.png"
-import rodolfo from "../assets/rodolfo.png";
-import liliana from "../assets/liliana.webp";
-import azul from "../assets/azul.png";
-import valeria from "../assets/valeria.png";
-import nora from "../assets/nora.png";
-import edgar from "../assets/edgar.png";
-import martha from "../assets/martha.png"
-import alonso from "../assets/alejandro.webp";
-import eduardo from "../assets/eduardo.png";
-import emiliano from "../assets/emiliano.webp";
-
+// Images
+import foto1 from '../assets/odontologia-preventiva.webp'
+import foto2 from '../assets/cirugia.webp'
+import foto3 from '../assets/implantologia.webp'
+import foto4 from '../assets/armonia.webp'
+import foto5 from '../assets/endodoncia-1.webp'
+import foto6 from '../assets/ortodoncia.webp'
+import foto7 from '../assets/odontopediatria.webp'
+import foto10 from '../assets/pathology.webp'
+import foto12 from '../assets/laboratorio.webp'
+import foto13 from '../assets/periodoncia.webp'
+import marcela from '../assets/marcela.png'
+import rodolfo from '../assets/rodolfo.png'
+import liliana from '../assets/liliana.webp'
+import azul from '../assets/azul.png'
+import valeria from '../assets/valeria.png'
+import nora from '../assets/nora.png'
+import edgar from '../assets/edgar.png'
+import martha from '../assets/martha.png'
+import alonso from '../assets/alejandro.webp'
+import eduardo from '../assets/eduardo.png'
+import emiliano from '../assets/emiliano.webp'
 
 const SliderF = () => {
-  let idRender = '1';
-  //State for Modal
-  const [isModal, setIsModal] = useState(false);
-  const [infoMU, setInfoModal] = useState(0);
-  const [slides, setSlides] = useState(2);
-  //States for cards
-  const [visibleA, setVisibleA] = useState(false);
-  const [visibleB, setVisibleB] = useState(false);
-  const [visibleC, setVisibleC] = useState(false);
-  const [visibleD, setVisibleD] = useState(false);
-  const [visibleE, setVisibleE] = useState(false);
-  const [visibleF, setVisibleF] = useState(false);
-  const [visibleG, setVisibleG] = useState(false);
-  const [visibleH, setVisibleH] = useState(false);
-  const [visibleI, setVisibleI] = useState(false);
-  const [visibleJ, setVisibleJ] = useState(false);
-  const [visibleK, setVisibleK] = useState(false);
-  const [visibleL, setVisibleL] = useState(false);
+  let idRender = '1'
+  // State for Modal
+  const [isModal, setIsModal] = useState(false)
+  const [infoMU, setInfoModal] = useState(0)
+  const [slides, setSlides] = useState(2)
+  // States for cards
+  const [visibleA, setVisibleA] = useState(false)
+  const [visibleB, setVisibleB] = useState(false)
+  const [visibleC, setVisibleC] = useState(false)
+  const [visibleD, setVisibleD] = useState(false)
+  const [visibleE, setVisibleE] = useState(false)
+  const [visibleF, setVisibleF] = useState(false)
+  const [visibleG, setVisibleG] = useState(false)
+  const [visibleH, setVisibleH] = useState(false)
+  const [visibleI, setVisibleI] = useState(false)
+  const [visibleJ, setVisibleJ] = useState(false)
+  const [visibleK, setVisibleK] = useState(false)
+  const [visibleL, setVisibleL] = useState(false)
 
   const slider = [
     {
@@ -67,7 +66,7 @@ const SliderF = () => {
           <li>Especialidad en Protesis bucal e Implantología <strong>Ced. Prof. 3873209</strong></li>
           <li>Profesor activo en Licenciatura F.O. UNAM</li>`,
           visible: visibleA,
-          textV: `${visibleA ? "Ver menos" : "Ver más"} `
+          textV: `${visibleA ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 9,
@@ -78,7 +77,7 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM</li>
           <li>Ortodoncia y ortopedia maxilofacial</li>`,
           visible: visibleB,
-          textV: `${visibleB ? "Ver menos" : "Ver más"} `
+          textV: `${visibleB ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 3,
@@ -88,7 +87,7 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 11343631</strong></li>
           <li>Técnico ceramista dental</li>`,
           visible: visibleC,
-          textV: `${visibleC ? "Ver menos" : "Ver más"} `
+          textV: `${visibleC ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 11,
@@ -99,7 +98,7 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad en ortodoncia <strong>Ced.Prof. 9627255</strong></li>`,
           visible: visibleD,
-          textV: `${visibleD ? "Ver menos" : "Ver más"} `
+          textV: `${visibleD ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 4,
@@ -109,7 +108,7 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista</li>
           <li><strong>Ced. Prof. 13356225</strong></li>`,
           visible: visibleE,
-          textV: `${visibleE ? "Ver menos" : "Ver más"} `
+          textV: `${visibleE ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 2,
@@ -120,7 +119,7 @@ const SliderF = () => {
           <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
           <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
           visible: visibleF,
-          textV: `${visibleF ? "Ver menos" : "Ver más"} `
+          textV: `${visibleF ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 7,
@@ -131,7 +130,7 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad de Endodoncia</li>`,
           visible: visibleG,
-          textV: `${visibleG ? "Ver menos" : "Ver más"} `
+          textV: `${visibleG ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 10,
@@ -145,9 +144,9 @@ const SliderF = () => {
           <li>Especialidad en Ortodoncia y Ortopedia maxilofacial</li>
           <li>Profesor activo de Posgrado F.O. UNAM</li>`,
           visible: visibleH,
-          textV: `${visibleH ? "Ver menos" : "Ver más"} `
-        },
-    ]
+          textV: `${visibleH ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
     },
     {
       id: 2,
@@ -162,7 +161,7 @@ const SliderF = () => {
           <li>Especialidad en Protesis bucal e Implantología <strong>Ced. Prof. 3873209</strong></li>
           <li>Profesor activo en Licenciatura F.O. UNAM</li>`,
           visible: visibleA,
-          textV: `${visibleA ? "Ver menos" : "Ver más"} `
+          textV: `${visibleA ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 2,
@@ -173,7 +172,7 @@ const SliderF = () => {
           <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
           <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
           visible: visibleF,
-          textV: `${visibleF ? "Ver menos" : "Ver más"} `
+          textV: `${visibleF ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 3,
@@ -183,7 +182,7 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 11343631</strong></li>
           <li>Técnico ceramista dental</li>`,
           visible: visibleC,
-          textV: `${visibleC ? "Ver menos" : "Ver más"} `
+          textV: `${visibleC ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 4,
@@ -193,9 +192,9 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista</li>
           <li><strong>Ced. Prof. 13356225</strong></li>`,
           visible: visibleE,
-          textV: `${visibleE ? "Ver menos" : "Ver más"} `
-        },
-    ]
+          textV: `${visibleE ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
     },
     {
       id: 3,
@@ -210,7 +209,7 @@ const SliderF = () => {
           <li>Especialidad en Protesis bucal e Implantología <strong>Ced. Prof. 3873209</strong></li>
           <li>Profesor activo en Licenciatura F.O. UNAM</li>`,
           visible: visibleA,
-          textV: `${visibleA ? "Ver menos" : "Ver más"} `
+          textV: `${visibleA ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 5,
@@ -224,7 +223,7 @@ const SliderF = () => {
           <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
           <li>Profesor activo de Posgrado FO. UNAM</li>`,
           visible: visibleI,
-          textV: `${visibleI ? "Ver menos" : "Ver más"} `
+          textV: `${visibleI ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 6,
@@ -237,9 +236,9 @@ const SliderF = () => {
           <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
           <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
           visible: visibleJ,
-          textV: `${visibleJ ? "Ver menos" : "Ver más"} `
-        },
-    ]
+          textV: `${visibleJ ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
     },
     {
       id: 4,
@@ -253,7 +252,7 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad de Endodoncia</li>`,
           visible: visibleG,
-          textV: `${visibleG ? "Ver menos" : "Ver más"} `
+          textV: `${visibleG ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 8,
@@ -264,9 +263,9 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad de Endodoncia</li>`,
           visible: visibleK,
-          textV: `${visibleK ? "Ver menos" : "Ver más"} `
-        },
-    ]
+          textV: `${visibleK ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
     },
     {
       id: 5,
@@ -280,7 +279,7 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad en ortodoncia <strong>Ced.Prof. 9627255</strong></li>`,
           visible: visibleD,
-          textV: `${visibleD ? "Ver menos" : "Ver más"} `
+          textV: `${visibleD ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 9,
@@ -291,9 +290,9 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM</li>
           <li>Ortodoncia y ortopedia maxilofacial</li>`,
           visible: visibleB,
-          textV: `${visibleB ? "Ver menos" : "Ver más"} `
+          textV: `${visibleB ? 'Ver menos' : 'Ver más'} `
         }
-    ]
+      ]
     },
     {
       id: 10,
@@ -310,9 +309,9 @@ const SliderF = () => {
           <li>Especialidad en Ortodoncia y Ortopedia maxilofacial</li>
           <li>Profesor activo de Posgrado F.O. UNAM</li>`,
           visible: visibleH,
-          textV: `${visibleH ? "Ver menos" : "Ver más"} `
-        },
-    ]
+          textV: `${visibleH ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
     },
     {
       id: 7,
@@ -329,7 +328,7 @@ const SliderF = () => {
           <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
           <li>Profesor activo de Posgrado FO. UNAM</li>`,
           visible: visibleI,
-          textV: `${visibleI ? "Ver menos" : "Ver más"} `
+          textV: `${visibleI ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 6,
@@ -342,9 +341,9 @@ const SliderF = () => {
           <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
           <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
           visible: visibleJ,
-          textV: `${visibleJ ? "Ver menos" : "Ver más"} `
-        },
-    ]
+          textV: `${visibleJ ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
     },
     {
       id: 8,
@@ -360,9 +359,9 @@ const SliderF = () => {
           <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
           <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
           visible: visibleJ,
-          textV: `${visibleJ ? "Ver menos" : "Ver más"} `
-        },
-    ]
+          textV: `${visibleJ ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
     },
     {
       id: 9,
@@ -375,7 +374,7 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 11343631</strong></li>
           <li>Técnico ceramista dental</li>`,
           visible: visibleC,
-          textV: `${visibleC ? "Ver menos" : "Ver más"} `
+          textV: `${visibleC ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 4,
@@ -385,9 +384,9 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista</li>
           <li><strong>Ced. Prof. 13356225</strong></li>`,
           visible: visibleE,
-          textV: `${visibleE ? "Ver menos" : "Ver más"} `
-        },
-    ]
+          textV: `${visibleE ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
     },
     {
       id: 11,
@@ -401,7 +400,7 @@ const SliderF = () => {
           <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
           <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
           visible: visibleF,
-          textV: `${visibleF ? "Ver menos" : "Ver más"} `
+          textV: `${visibleF ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 6,
@@ -414,123 +413,123 @@ const SliderF = () => {
           <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
           <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
           visible: visibleJ,
-          textV: `${visibleJ ? "Ver menos" : "Ver más"} `
-        },
-    ]
-    },
+          textV: `${visibleJ ? 'Ver menos' : 'Ver más'} `
+        }
+      ]
+    }
   ]
   const infoModal = [
     {
       id: 1,
       img: foto1,
-      title: "Odontología Preventiva",
-      subtitle: "Conoce a nuestros especialistas",
-      info: "La odontología preventiva es todo cuidado dental que ayuda a mantener una buena salud oral. Es una combinación de chequeos dentales regulares y el desarrollo de buenos hábitos, como el cepillado y el uso del hilo dental.",
+      title: 'Odontología Preventiva',
+      subtitle: 'Conoce a nuestros especialistas',
+      info: 'La odontología preventiva es todo cuidado dental que ayuda a mantener una buena salud oral. Es una combinación de chequeos dentales regulares y el desarrollo de buenos hábitos, como el cepillado y el uso del hilo dental.'
     },
     {
       id: 2,
       img: foto4,
-      title: "Rehabilitación Oral",
-      subtitle: "Conoce a nuestros especialistas",
-      info: "Periodoncia es la rama de la odontología que se encarga de realizar los procedimientos para el acondicionamiento y restauración tanto en función cómo estética de los tejidos blandos de la boca para el proceso de colocación de un implante dental y son tratadas las enfermedad de la encía. El objetivo principal es evitar la pérdida de dientes y restaurar la salud bucal.",
+      title: 'Rehabilitación Oral',
+      subtitle: 'Conoce a nuestros especialistas',
+      info: 'Periodoncia es la rama de la odontología que se encarga de realizar los procedimientos para el acondicionamiento y restauración tanto en función cómo estética de los tejidos blandos de la boca para el proceso de colocación de un implante dental y son tratadas las enfermedad de la encía. El objetivo principal es evitar la pérdida de dientes y restaurar la salud bucal.'
     },
     {
       id: 3,
       img: foto3,
-      title: "Implantología",
-      subtitle: "Conoce a nuestros especialistas",
-      info: "La prótesis bucal es la rama de la odontología que se encarga de devolver la función, anatomía, fonación y estética alteradas como consecuencia de la perdida de uno o mas dientes mientras que la implantología se  encarga del reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante.",
+      title: 'Implantología',
+      subtitle: 'Conoce a nuestros especialistas',
+      info: 'La prótesis bucal es la rama de la odontología que se encarga de devolver la función, anatomía, fonación y estética alteradas como consecuencia de la perdida de uno o mas dientes mientras que la implantología se  encarga del reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante.'
     },
     {
       id: 4,
       img: foto5,
-      title: "Endodoncia",
-      subtitle: "Conoce a nuestras especialistas",
-      info: "Endodoncia es la rama de la odontología que comprende la etiología, prevención, diagnostico, y tratamiento de las alteraciones patológicas de la pulpa dental y sus repercusiones en la región periapical.",
+      title: 'Endodoncia',
+      subtitle: 'Conoce a nuestras especialistas',
+      info: 'Endodoncia es la rama de la odontología que comprende la etiología, prevención, diagnostico, y tratamiento de las alteraciones patológicas de la pulpa dental y sus repercusiones en la región periapical.'
     },
     {
       id: 5,
       img: foto6,
-      title: "Ortodoncia",
-      subtitle: "Conoce a nuestros especialistas",
-      info: "La ortodoncia es el área de la odontología que previene y corrige la malposición de los dientes, el crecimiento de los maxilares y favorece la estética facial y dental.",
+      title: 'Ortodoncia',
+      subtitle: 'Conoce a nuestros especialistas',
+      info: 'La ortodoncia es el área de la odontología que previene y corrige la malposición de los dientes, el crecimiento de los maxilares y favorece la estética facial y dental.'
     },
     {
       id: 6,
       img: foto7,
-      title: "Odontopediatría",
-      subtitle: "Conoce a nuestro especialista",
-      info: "Es la rama de la odontología encargada del manejo de la salud dental de los niños, etapa en la cual se puede prevenir y diagnosticar de forma temprana alguna patología o alteración dental, así como prevención de caries dentales, enfermedad periodontal y maloclusiones.",
+      title: 'Odontopediatría',
+      subtitle: 'Conoce a nuestro especialista',
+      info: 'Es la rama de la odontología encargada del manejo de la salud dental de los niños, etapa en la cual se puede prevenir y diagnosticar de forma temprana alguna patología o alteración dental, así como prevención de caries dentales, enfermedad periodontal y maloclusiones.'
     },
     {
       id: 7,
       img: foto2,
-      title: "Cirugía Oral",
-      subtitle: "Conoce a nuestros especialistas",
-      info: "Especialidad de la Odontología que ofrece a la población, alternativas de tratamiento médico y quirúrgico a diferentes problemas de salud, entre los que se encuentran los defectos congénitos como el labio y el paladar fisurados, las disarmonías del desarrollo facial, los traumatismos de la región oral y maxilofacial, las alteraciones de la articulación temporomandibular, los quistes y los tumores odontogénicos, las infecciones de origen dental; utilizando para su manejo  distintos tratamientos quirúrgicos como Cirugía Ortognática, la reducción y fijación de fracturas del esqueleto facial, el uso de distractores osteogénicos, la reconstrucción del esqueleto facial mediante la toma y colocación de injertos intra y extraorales, la regeneración tisular guiada, a colocación de implantes dentales y cigomáticos, etc.",
+      title: 'Cirugía Oral',
+      subtitle: 'Conoce a nuestros especialistas',
+      info: 'Especialidad de la Odontología que ofrece a la población, alternativas de tratamiento médico y quirúrgico a diferentes problemas de salud, entre los que se encuentran los defectos congénitos como el labio y el paladar fisurados, las disarmonías del desarrollo facial, los traumatismos de la región oral y maxilofacial, las alteraciones de la articulación temporomandibular, los quistes y los tumores odontogénicos, las infecciones de origen dental; utilizando para su manejo  distintos tratamientos quirúrgicos como Cirugía Ortognática, la reducción y fijación de fracturas del esqueleto facial, el uso de distractores osteogénicos, la reconstrucción del esqueleto facial mediante la toma y colocación de injertos intra y extraorales, la regeneración tisular guiada, a colocación de implantes dentales y cigomáticos, etc.'
     },
     {
       id: 8,
       img: foto10,
-      title: "Patología Bucal",
-      subtitle: "Conoce a nuestro especialista",
-      info: "Atendemos casos de condición, lesiones y enfermedades que se desarrollan en la región Bucal y Maxilofacial. Realizamos cirugía de biopsia incisionales y exisionales para el diagnóstico y tratamiento específico.",
+      title: 'Patología Bucal',
+      subtitle: 'Conoce a nuestro especialista',
+      info: 'Atendemos casos de condición, lesiones y enfermedades que se desarrollan en la región Bucal y Maxilofacial. Realizamos cirugía de biopsia incisionales y exisionales para el diagnóstico y tratamiento específico.'
     },
     {
       id: 9,
       img: foto12,
-      title: "Laboratorio Dental",
-      subtitle: "Conoce a nuestros especialistas",
-      info: "El laboratorista dental se dedica a la fabricación de prótesis dentales fijas o removibles, como coronas dentales, coronas sobre pilares de implantes, pilares de implantes, dentaduras totales o parciales, etc. a partir de un tratamiento especifico indicado por el odontólogo, con la finalidad de ayudar a devolver la función al paciente o bien corregir la estética dental de dicho paciente.",
+      title: 'Laboratorio Dental',
+      subtitle: 'Conoce a nuestros especialistas',
+      info: 'El laboratorista dental se dedica a la fabricación de prótesis dentales fijas o removibles, como coronas dentales, coronas sobre pilares de implantes, pilares de implantes, dentaduras totales o parciales, etc. a partir de un tratamiento especifico indicado por el odontólogo, con la finalidad de ayudar a devolver la función al paciente o bien corregir la estética dental de dicho paciente.'
     },
     {
       id: 10,
       img: foto13,
-      title: "Periodoncia",
-      subtitle: "Conoce a nuestros especialistas",
-      info: "La periodoncia es la rama de la Odontología que trata las enfermedades de las encías y del hueso que sostiene los dientes. Y es que las enfermedades de las encías como la gingivitis y periodontitis son de las causas más comunes de pérdida de dientes, y su control es fundamental. ",
-    },
-  ];
+      title: 'Periodoncia',
+      subtitle: 'Conoce a nuestros especialistas',
+      info: 'La periodoncia es la rama de la Odontología que trata las enfermedades de las encías y del hueso que sostiene los dientes. Y es que las enfermedades de las encías como la gingivitis y periodontitis son de las causas más comunes de pérdida de dientes, y su control es fundamental. '
+    }
+  ]
   const visibleInfo = (e) => {
     switch (e) {
       case 1:
-        setVisibleA(!visibleA);
-        break;
+        setVisibleA(!visibleA)
+        break
       case 2:
-        setVisibleF(!visibleF);
-        break;
+        setVisibleF(!visibleF)
+        break
       case 3:
-        setVisibleC(!visibleC);
-        break;
+        setVisibleC(!visibleC)
+        break
       case 4:
-        setVisibleE(!visibleE);
-        break;
+        setVisibleE(!visibleE)
+        break
       case 5:
-        setVisibleI(!visibleI);
-        break;
+        setVisibleI(!visibleI)
+        break
       case 6:
-        setVisibleJ(!visibleJ);
-        break;
+        setVisibleJ(!visibleJ)
+        break
       case 7:
-        setVisibleG(!visibleG);
-        break;
+        setVisibleG(!visibleG)
+        break
       case 8:
-        setVisibleK(!visibleK);
-        break;
+        setVisibleK(!visibleK)
+        break
       case 9:
-        setVisibleB(!visibleB);
-        break;
+        setVisibleB(!visibleB)
+        break
       case 10:
-        setVisibleH(!visibleH);
-        break;
+        setVisibleH(!visibleH)
+        break
       case 11:
-        setVisibleD(!visibleD);
-        break;
+        setVisibleD(!visibleD)
+        break
       case 12:
-        setVisibleL(!visibleL);
-        break;
+        setVisibleL(!visibleL)
+        break
       default:
-        break;
+        break
     }
   }
   const InfoModal = () => {
@@ -544,87 +543,85 @@ const SliderF = () => {
     )
   }
   function openModal (e) {
-    setIsModal(true);
-    idRender = e.target.id;
-    if (idRender == '6' || idRender == '8') {
-      setSlides(1);
+    setIsModal(true)
+    idRender = e.target.id
+    if (idRender === '6' || idRender === '8') {
+      setSlides(1)
     } else {
-      setSlides(2);
+      setSlides(2)
     }
-    setInfoModal(idRender-1)
+    setInfoModal(idRender - 1)
   }
   const closeModal = () => {
-    setIsModal(false);
-  } 
+    setIsModal(false)
+  }
 
   return (
-    <div className="amenidades">
-      <div className="galery" id="servicios">
-      <h2> Servicios y Especialidades</h2>
-      <div className="container-galery">
-        {
-          infoModal.map((item) => (
-            <div className="item-galery" key={item.id}>
-            <h3>{item.title}</h3>
-              <img src={item.img} alt={item.title} />
-              <button className="btn-mas" id={item.id} onClick={(e) => openModal(e)}>
-                Ver más
-              </button>
+    <div className='amenidades'>
+      <div className='galery' id='servicios'>
+        <h2>Servicios y Especialidades</h2>
+        <div className='container-galery'>
+          {
+            infoModal.map((item) => (
+              <div className='item-galery' key={item.id}>
+                <h3>{item.title}</h3>
+                <img src={item.img} alt={item.title} />
+                <button className='btn-mas' id={item.id} onClick={(e) => openModal(e)}>
+                  Ver más
+                </button>
+              </div>
+            ))
+          }
+        </div>
+        <div
+          className={`modal-atractions ${isModal ? 'popup' : ''} `}
+          id='modal-atractions'
+        >
+          <div className='container-atractions' id='container-atractions'>
+            <button className='btn-close' onClick={() => closeModal()}>
+              <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' className='bi bi-x-circle' viewBox='0 0 16 16'>
+                <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16' />
+                <path d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708' />
+              </svg>
+            </button>
+            <div className='container-information container-text-slider'>
+              <InfoModal info={infoMU} />
+              <Splide
+                className='mb-10'
+                aria-label='Slider Dentistas'
+                options={{
+                  perPage: slides,
+                  gap: '1rem',
+                  width: '100%',
+                  breakpoints: { 768: { perPage: 1 } }
+                }}
+              >
+                {
+                  slider[infoMU].infoSlider.map((info, j) => (
+                    <SplideSlide key={j}>
+                      <div className='item-amenidades'>
+                        <img src={info.photo} alt={`Foto de perfil de ${info.name}`} />
+                        <h2>{info.name}</h2>
+                        <CButton onClick={() => visibleInfo(info.id)}><span>{info.textV}</span></CButton>
+                        <CCollapse visible={info.visible}>
+                          <CCard className='mt-3'>
+                            <CCardBody>
+                              <ul className='list-details' dangerouslySetInnerHTML={{ __html: info.list }} />
+                            </CCardBody>
+                          </CCard>
+                        </CCollapse>
+                      </div>
+                    </SplideSlide>
+                  ))
+                }
+              </Splide>
+              <Button />
             </div>
-          ))
-        }
-      </div> 
-      <div
-        className={`modal-atractions ${isModal ? "popup" : ""} `}
-        id="modal-atractions"
-      >
-        <div className="container-atractions" id="container-atractions">
-          <button className='btn-close' onClick={() => closeModal()}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x-circle" viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-            </svg>
-          </button>
-          <div className="container-information container-text-slider">
-            <InfoModal info={infoMU}/>
-            <Splide 
-              className="mb-10"
-              aria-label="Slider Dentistas"
-              options={ {
-                perPage: slides,
-                gap: '1rem',
-                width: '100%',
-                breakpoints: { 768: { perPage: 1, } }
-              } }
-            >
-              {
-                slider[infoMU].infoSlider.map((info, j) => (
-                  <SplideSlide key={j}>
-                    <div className="item-amenidades">
-                      <img src={info.photo} alt={`Foto de perfil de ${info.name}`} />
-                      <h2>{info.name}</h2>
-                      <CButton onClick={() => visibleInfo(info.id)}><span>{info.textV}</span></CButton>
-                      <CCollapse visible={info.visible}>
-                        <CCard className="mt-3">
-                          <CCardBody>
-                            <ul className="list-details" dangerouslySetInnerHTML={{__html: info.list}}>
-                              
-                            </ul>
-                          </CCardBody>
-                        </CCard>
-                      </CCollapse>
-                    </div>
-                  </SplideSlide>
-                ))
-              }
-            </Splide>
-            <Button />
           </div>
         </div>
       </div>
-      </div>
     </div>
-  );
-};  
+  )
+}
 
-export default SliderF;
+export default SliderF

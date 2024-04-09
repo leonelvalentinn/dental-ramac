@@ -1,14 +1,13 @@
-
-import ButtonContact from "../Components/ButtonContact";
-import "../Styles/ofrecemos.css";
+import ButtonContact from '../Components/ButtonContact'
+import '../Styles/ofrecemos.css'
 
 const Ofrecemos = () => {
   return (
-    <div className="ofrecemos">
+    <div className='ofrecemos'>
       <h2>¿Qué te ofrecemos?</h2>
-      <div className="container-ofrecemos">
-        <div className="item-ofrecemos">
-          <img src='' alt="" />
+      <div className='container-ofrecemos'>
+        <div className='item-ofrecemos'>
+          <img src='' alt='' />
 
           <h2>Excelente Ubicación</h2>
           <p>
@@ -18,8 +17,8 @@ const Ofrecemos = () => {
           </p>
           <ButtonContact />
         </div>
-        <div className="item-ofrecemos">
-          <img src='' alt="" />
+        <div className='item-ofrecemos'>
+          <img src='' alt='' />
 
           <h2>Seguridad</h2>
           <p>Vive comodo y seguro con nosotros</p>
@@ -31,8 +30,8 @@ const Ofrecemos = () => {
 
           <ButtonContact />
         </div>
-        <div className="item-ofrecemos">
-          <img src='' alt="" />
+        <div className='item-ofrecemos'>
+          <img src='' alt='' />
 
           <h2>Financiamiento</h2>
           <p>Contamos con los mejores planes de financiamiento. </p>
@@ -46,7 +45,7 @@ const Ofrecemos = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Ofrecemos;
+export default Ofrecemos

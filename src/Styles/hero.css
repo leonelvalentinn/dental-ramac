@@ -41,8 +41,77 @@ small {
   margin: 0;
   font-weight: 500;
 }
-
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #0e3352c0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 9999;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: transform 0.3s linear;
+}
+.modal .overlay-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  position: relative;
+}
+.modal .overlay-content h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+.modal .overlay-content img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+.modal .overlay-content button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: all 0.2s linear;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.modal .overlay-content button:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.1);
+}
+.show-modal {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform 0.3s linear;
+}
+.container-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.container-countdown .item-countdown {
+  margin: 10px 0;
+}
+.container-countdown .item-countdown span:nth-child(1) {
+  margin-right: 5px;
+}
 @media (min-width: 768px) {
+  .container-countdown .item-countdown span {
+    font-size: 25px;
+  }
   small {
     font-size: 13px;
   }
