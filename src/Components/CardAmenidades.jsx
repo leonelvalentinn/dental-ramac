@@ -1,5 +1,4 @@
 import '../Styles/card-amenidades.css'
-import promo2 from '../assets/promo-2.webp'
 import promo1 from '../assets/promo-1.webp'
 import promo3 from '../assets/RAMAC.webp'
 
@@ -15,10 +14,6 @@ const CardAmenidades = () => {
         <div className='item-promo'>
           <img src={promo1} alt='Promoción 1' />
           <a href='https://wa.me/525544754479?text=Buenas tardes, solicito información sobre la limpieza dental' className='btn-header-contacto'>Agenda tu cita</a>
-        </div>
-        <div className='item-promo'>
-          <img src={promo2} alt='Promoción 1' />
-          <a href='https://wa.me/525544754479?text=Buenas tardes, solicito información sobre la promoción de resinas' className='btn-header-contacto'>Agenda tu cita</a>
         </div>
       </div>
     </div>

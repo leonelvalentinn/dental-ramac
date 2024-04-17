@@ -5,7 +5,6 @@ import RenderFotos from '../Components/RenderFotos'
 import Navbar from '../Components/Navbar'
 import SliderF from '../Components/SliderF'
 import { Urgencias } from '../Components/Urgencias'
-import { Modal } from '../Components/Modal'
 // import Amenidades from '../Components/Amenidades'
 // import GalleryHome from '../Components/GalleryHome'
 
@@ -21,7 +20,6 @@ const Home = () => {
       {/* <GalleryHome /> */}
       {/* <Amenidades />  */}
       <VideoGround />
-      <Modal />
     </div>
   )
 }
