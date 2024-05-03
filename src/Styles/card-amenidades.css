@@ -162,6 +162,12 @@
   height: 35px;
   object-fit: cover;
 }
+.hidden {
+  display: none !important;
+}
+.container-countdown {
+  color: black !important;
+}
 @media (min-width: 768px) {
   .card-amenidades {
     width: 100%;
