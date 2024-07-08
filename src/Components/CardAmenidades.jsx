@@ -1,7 +1,7 @@
 import '../Styles/card-amenidades.css'
-import promo3 from '../assets/promo-3.jpg'
-import promo4 from '../assets/promo-4.jpg'
-import promo5 from '../assets/promo-5.jpg'
+import promo3 from '../assets/promo-3.webp'
+import promo4 from '../assets/promo-4.webp'
+import promo5 from '../assets/promo-5.webp'
 // import { useState, useEffect } from 'react'
 
 const CardAmenidades = () => {

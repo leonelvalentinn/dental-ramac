@@ -1,17 +1,25 @@
 .slider {
   max-width: 100%;
-  height: 700px;
+  /* height: 700px; */
   position: relative;
   display: inline-block;
+  /* Only for 21 anniversary */
+  height: auto;
+  margin-top: 85px;
+  width: 100%;
 }
+
 small {
   font-size: 10px;
 }
+
 .img-slider {
   width: 100%;
-  height: 700px;
+  /* height: 700px; */
+  height: auto;
   object-fit: cover;
 }
+
 .container-text {
   position: absolute;
   left: 0;
@@ -22,6 +30,11 @@ small {
   justify-content: center;
   align-items: flex-end;
 }
+
+.anniversary {
+  display: none;
+}
+
 .text-slider {
   width: 95%;
   height: auto;
@@ -34,6 +47,7 @@ small {
   align-items: center;
   justify-content: center;
 }
+
 .text-slider p {
   font-size: 1.2rem;
   color: #fff;
@@ -41,6 +55,7 @@ small {
   margin: 0;
   font-weight: 500;
 }
+
 .modal {
   display: flex;
   justify-content: center;
@@ -56,6 +71,7 @@ small {
   transform-origin: bottom;
   transition: transform 0.3s linear;
 }
+
 .modal .overlay-content {
   display: flex;
   justify-content: center;
@@ -64,6 +80,7 @@ small {
   padding: 1rem 1rem;
   position: relative;
 }
+
 .modal .overlay-content h2 {
   font-size: 30px;
   font-weight: bold;
@@ -71,11 +88,13 @@ small {
   text-align: center;
   color: white;
 }
+
 .modal .overlay-content img {
   width: 100%;
   max-width: 400px;
   margin: 20px 0;
 }
+
 .modal .overlay-content button {
   border: none;
   background-color: transparent;
@@ -86,15 +105,18 @@ small {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .modal .overlay-content button:hover {
   transition: all 0.2s linear;
   transform: scale(1.1);
 }
+
 .show-modal {
   transform: scale(1);
   transform-origin: top;
   transition: transform 0.3s linear;
 }
+
 .container-countdown {
   display: flex;
   justify-content: center;
@@ -102,25 +124,32 @@ small {
   gap: 10px;
   color: white;
 }
+
 .container-countdown .item-countdown {
   margin: 10px 0;
 }
+
 .container-countdown .item-countdown span:nth-child(1) {
   margin-right: 5px;
 }
+
 @media (min-width: 768px) {
   .container-countdown .item-countdown span {
     font-size: 25px;
   }
+
   small {
     font-size: 13px;
   }
+
   .img-slider {
     display: inline-block;
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 90svh;
+    background-color: #0e3352;
   }
+
   .img-movil {
     display: none;
   }
@@ -137,6 +166,7 @@ small {
     align-items: center;
     justify-content: center;
   }
+
   .text-slider p {
     font-size: 1.5rem;
     color: #fff;
