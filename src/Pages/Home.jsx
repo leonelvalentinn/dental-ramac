@@ -1,7 +1,7 @@
 import Hero from '../Components/Hero'
 import About from '../Components/About'
 import VideoGround from '../Components/VideoGround'
-import RenderFotos from '../Components/RenderFotos'
+import Office from '../Components/Office'
 import Navbar from '../Components/Navbar'
 import SliderF from '../Components/SliderF'
 import { Urgencias } from '../Components/Urgencias'
@@ -14,7 +14,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      <RenderFotos />
+      <Office />
       <Urgencias />
       <SliderF />
       {/* <GalleryHome /> */}
