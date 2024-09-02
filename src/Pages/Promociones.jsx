@@ -3,7 +3,7 @@ import CardAmenidades from '../Components/CardAmenidades'
 import VideoGround from '../Components/VideoGround'
 import NavBarPro from '../Components/NavBarPro'
 
-const AmenidadesHome = () => {
+const Promociones = () => {
   return (
     <div id='inicio'>
       <NavBarPro />
@@ -14,4 +14,4 @@ const AmenidadesHome = () => {
   )
 }
 
-export default AmenidadesHome
+export default Promociones

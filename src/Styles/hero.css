@@ -140,6 +140,19 @@ small {
   margin-right: 5px;
 }
 
+.container-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-slider {
+  max-width: 1024px;
+  position: relative;
+}
+
 @media (min-width: 768px) {
   .container-countdown .item-countdown span {
     font-size: 25px;

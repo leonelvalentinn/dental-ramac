@@ -38,57 +38,73 @@ const Hero = () => {
         className='mySwiper'
       >
         <SwiperSlide>
-          <img
-            src={Slider2}
-            className='img-slider'
-            alt='Foto grupal del equipo Dental Ramac'
-          />
-          <img src={Slider4} className='img-slider phone' />
-          <div className='container-text'>
-            <div className='text-slider'>
-              <p>
-                El día más malgastado de todos es sin una sonrisa.{' '}
-                <small>(Edward Estlin Cummings)</small>
-              </p>
-              <ButtonContact />
+          <div className='container-item'>
+            <div className='item-slider'>
+              <img
+                src={Slider2}
+                className='img-slider'
+                alt='Foto grupal del equipo Dental Ramac'
+              />
+              <img src={Slider4} className='img-slider phone' />
+              <div className='container-text'>
+                <div className='text-slider'>
+                  <p>
+                    El día más malgastado de todos es sin una sonrisa.{' '}
+                    <small>(Edward Estlin Cummings)</small>
+                  </p>
+                  <ButtonContact />
+                </div>
+              </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Slider1} className='img-slider' />
-          <img src={Slider5} className='img-slider phone' />
-          <div className='container-text'>
-            <div className='text-slider'>
-              <p>
-                Un día sin sonreír es un día perdido.{' '}
-                <small>(Charlie Chaplin)</small>
-              </p>
-              <ButtonContact />
+          <div className='container-item'>
+            <div className='item-slider'>
+              <img src={Slider1} className='img-slider' />
+              <img src={Slider5} className='img-slider phone' />
+              <div className='container-text'>
+                <div className='text-slider'>
+                  <p>
+                    Un día sin sonreír es un día perdido.{' '}
+                    <small>(Charlie Chaplin)</small>
+                  </p>
+                  <ButtonContact />
+                </div>
+              </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Slider3} className='img-slider' />
-          <img src={Slider6} className='img-slider phone' />
-          <div className='container-text'>
-            <div className='text-slider'>
-              <p>
-                Sonreír es definitivamente uno de los mejores y más bellos
-                remedios. <small>(Paulo Coelho)</small>
-              </p>
-              <ButtonContact />
+          <div className='container-item'>
+            <div className='item-slider'>
+              <img src={Slider3} className='img-slider' />
+              <img src={Slider6} className='img-slider phone' />
+              <div className='container-text'>
+                <div className='text-slider'>
+                  <p>
+                    Sonreír es definitivamente uno de los mejores y más bellos
+                    remedios. <small>(Paulo Coelho)</small>
+                  </p>
+                  <ButtonContact />
+                </div>
+              </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Slider7} className='img-slider phone' />
-          <div className='container-text'>
-            <div className='text-slider'>
-              <p>
-                Sonreír es definitivamente uno de los mejores y más bellos
-                remedios. <small>(Paulo Coelho)</small>
-              </p>
-              <ButtonContact />
+          <div className='container-item'>
+            <div className='item-slider'>
+              <img src={Slider7} className='img-slider phone' />
+              <div className='container-text'>
+                <div className='text-slider'>
+                  <p>
+                    Sonreír es definitivamente uno de los mejores y más bellos
+                    remedios. <small>(Paulo Coelho)</small>
+                  </p>
+                  <ButtonContact />
+                </div>
+              </div>
             </div>
           </div>
         </SwiperSlide>

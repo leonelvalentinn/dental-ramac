@@ -1,7 +1,6 @@
 // Components
 import { useState } from 'react'
-import { CCollapse, CCard, CCardBody, CButton } from '@coreui/react'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
+import { Splide } from '@splidejs/react-splide'
 import Button from './Button'
 
 // Styles
@@ -31,6 +30,7 @@ import martha from '../assets/martha.png'
 import alonso from '../assets/alejandro.webp'
 import eduardo from '../assets/eduardo.png'
 import emiliano from '../assets/emiliano.webp'
+import { CardSlider } from './CardSlider'
 
 const SliderF = () => {
   let idRender = '1'
@@ -38,19 +38,6 @@ const SliderF = () => {
   const [isModal, setIsModal] = useState(false)
   const [infoMU, setInfoModal] = useState(0)
   const [slides, setSlides] = useState(2)
-  // States for cards
-  const [visibleA, setVisibleA] = useState(false)
-  const [visibleB, setVisibleB] = useState(false)
-  const [visibleC, setVisibleC] = useState(false)
-  const [visibleD, setVisibleD] = useState(false)
-  const [visibleE, setVisibleE] = useState(false)
-  const [visibleF, setVisibleF] = useState(false)
-  const [visibleG, setVisibleG] = useState(false)
-  const [visibleH, setVisibleH] = useState(false)
-  const [visibleI, setVisibleI] = useState(false)
-  const [visibleJ, setVisibleJ] = useState(false)
-  const [visibleK, setVisibleK] = useState(false)
-  const [visibleL, setVisibleL] = useState(false)
 
   const slider = [
     {
@@ -65,8 +52,6 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM </li>
           <li>Especialidad en Protesis bucal e Implantología <strong>Ced. Prof. 3873209</strong></li>
           <li>Profesor activo en Licenciatura F.O. UNAM</li>`,
-          visible: visibleA,
-          textV: `${visibleA ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 9,
@@ -76,8 +61,6 @@ const SliderF = () => {
           <li>Odontólogo <strong>Ced. Prof. 1.082.985.066</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Ortodoncia y ortopedia maxilofacial</li>`,
-          visible: visibleB,
-          textV: `${visibleB ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 3,
@@ -86,8 +69,6 @@ const SliderF = () => {
           list: `<li>Universidad Autónoma de Sinaloa </li>
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 11343631</strong></li>
           <li>Técnico ceramista dental</li>`,
-          visible: visibleC,
-          textV: `${visibleC ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 11,
@@ -97,8 +78,6 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista <strong>Ced.Prof.5258208</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad en ortodoncia <strong>Ced.Prof. 9627255</strong></li>`,
-          visible: visibleD,
-          textV: `${visibleD ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 4,
@@ -107,8 +86,6 @@ const SliderF = () => {
           list: `<li>Facultad de odontología UNAM</li>
           <li>Lic. en Cirujano Dentista</li>
           <li><strong>Ced. Prof. 13356225</strong></li>`,
-          visible: visibleE,
-          textV: `${visibleE ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 2,
@@ -118,8 +95,6 @@ const SliderF = () => {
           <li>Licenciatura en Cirujana Dentista. <strong>Ced. Prof. 6991412</strong></li>
           <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
           <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
-          visible: visibleF,
-          textV: `${visibleF ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 7,
@@ -129,8 +104,6 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof.10440497</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad de Endodoncia</li>`,
-          visible: visibleG,
-          textV: `${visibleG ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 10,
@@ -143,8 +116,6 @@ const SliderF = () => {
           <li>Centro de Estudios de Posgrado en Ortodoncia Valle de Anáhuac</li>
           <li>Especialidad en Ortodoncia y Ortopedia maxilofacial</li>
           <li>Profesor activo de Posgrado F.O. UNAM</li>`,
-          visible: visibleH,
-          textV: `${visibleH ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -160,8 +131,6 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM </li>
           <li>Especialidad en Protesis bucal e Implantología <strong>Ced. Prof. 3873209</strong></li>
           <li>Profesor activo en Licenciatura F.O. UNAM</li>`,
-          visible: visibleA,
-          textV: `${visibleA ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 2,
@@ -171,8 +140,6 @@ const SliderF = () => {
           <li>Licenciatura en Cirujana Dentista. <strong>Ced. Prof. 6991412</strong></li>
           <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
           <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
-          visible: visibleF,
-          textV: `${visibleF ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 3,
@@ -181,8 +148,6 @@ const SliderF = () => {
           list: `<li>Universidad Autónoma de Sinaloa </li>
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 11343631</strong></li>
           <li>Técnico ceramista dental</li>`,
-          visible: visibleC,
-          textV: `${visibleC ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 4,
@@ -191,8 +156,6 @@ const SliderF = () => {
           list: `<li>Facultad de odontología UNAM</li>
           <li>Lic. en Cirujano Dentista</li>
           <li><strong>Ced. Prof. 13356225</strong></li>`,
-          visible: visibleE,
-          textV: `${visibleE ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -208,8 +171,6 @@ const SliderF = () => {
           <li>División de estudios de posgrado UNAM </li>
           <li>Especialidad en Protesis bucal e Implantología <strong>Ced. Prof. 3873209</strong></li>
           <li>Profesor activo en Licenciatura F.O. UNAM</li>`,
-          visible: visibleA,
-          textV: `${visibleA ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 5,
@@ -222,8 +183,6 @@ const SliderF = () => {
           <li>Maestría en Ciencias <strong>Ced. Prof. 09698489</strong></li>
           <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
           <li>Profesor activo de Posgrado FO. UNAM</li>`,
-          visible: visibleI,
-          textV: `${visibleI ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 6,
@@ -235,8 +194,6 @@ const SliderF = () => {
           <li>Especialista en patología bucal <strong>Ced. Prof. 10590811</strong></li>
           <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
           <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
-          visible: visibleJ,
-          textV: `${visibleJ ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -251,8 +208,6 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof.10440497</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad de Endodoncia</li>`,
-          visible: visibleG,
-          textV: `${visibleG ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 8,
@@ -262,8 +217,6 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof.10440497</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad de Endodoncia</li>`,
-          visible: visibleK,
-          textV: `${visibleK ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -278,8 +231,6 @@ const SliderF = () => {
           <li>Lic. en Cirujano Dentista <strong>Ced.Prof.5258208</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Especialidad en ortodoncia <strong>Ced.Prof. 9627255</strong></li>`,
-          visible: visibleD,
-          textV: `${visibleD ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 9,
@@ -289,8 +240,6 @@ const SliderF = () => {
           <li>Odontólogo <strong>Ced. Prof. 1.082.985.066</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Ortodoncia y ortopedia maxilofacial</li>`,
-          visible: visibleB,
-          textV: `${visibleB ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -308,8 +257,6 @@ const SliderF = () => {
           <li>Centro de Estudios de Posgrado en Ortodoncia Valle de Anáhuac</li>
           <li>Especialidad en Ortodoncia y Ortopedia maxilofacial</li>
           <li>Profesor activo de Posgrado F.O. UNAM</li>`,
-          visible: visibleH,
-          textV: `${visibleH ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -327,8 +274,6 @@ const SliderF = () => {
           <li>Maestría en Ciencias <strong>Ced. Prof. 09698489</strong></li>
           <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
           <li>Profesor activo de Posgrado FO. UNAM</li>`,
-          visible: visibleI,
-          textV: `${visibleI ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 6,
@@ -340,8 +285,6 @@ const SliderF = () => {
           <li>Especialista en patología bucal <strong>Ced. Prof. 10590811</strong></li>
           <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
           <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
-          visible: visibleJ,
-          textV: `${visibleJ ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -358,8 +301,6 @@ const SliderF = () => {
           <li>Especialista en patología bucal <strong>Ced. Prof. 10590811</strong></li>
           <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
           <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
-          visible: visibleJ,
-          textV: `${visibleJ ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -373,8 +314,6 @@ const SliderF = () => {
           list: `<li>Universidad Autónoma de Sinaloa </li>
           <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 11343631</strong></li>
           <li>Técnico ceramista dental</li>`,
-          visible: visibleC,
-          textV: `${visibleC ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 4,
@@ -383,8 +322,6 @@ const SliderF = () => {
           list: `<li>Facultad de odontología UNAM</li>
           <li>Lic. en Cirujano Dentista</li>
           <li><strong>Ced. Prof. 13356225</strong></li>`,
-          visible: visibleE,
-          textV: `${visibleE ? 'Ver menos' : 'Ver más'} `
         }
       ]
     },
@@ -399,8 +336,6 @@ const SliderF = () => {
           <li>Licenciatura en Cirujana Dentista. <strong>Ced. Prof. 6991412</strong></li>
           <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
           <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
-          visible: visibleF,
-          textV: `${visibleF ? 'Ver menos' : 'Ver más'} `
         },
         {
           id: 6,
@@ -412,8 +347,6 @@ const SliderF = () => {
           <li>Especialista en patología bucal <strong>Ced. Prof. 10590811</strong></li>
           <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
           <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
-          visible: visibleJ,
-          textV: `${visibleJ ? 'Ver menos' : 'Ver más'} `
         }
       ]
     }
@@ -424,114 +357,73 @@ const SliderF = () => {
       img: foto1,
       title: 'Odontología Preventiva',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'La odontología preventiva es todo cuidado dental que ayuda a mantener una buena salud oral. Es una combinación de chequeos dentales regulares y el desarrollo de buenos hábitos, como el cepillado y el uso del hilo dental.'
+      info: 'Esta área busca anticiparse a la aparición de dolor o molestias que puedan afectar los dientes, encías o tejidos de soporte como, por ejemplo, infecciones de encías, pérdida de piezas dentales, sensibilidad, caries y otras. Garantizando de este modo una salud bucal a largo plazo.'
     },
     {
       id: 2,
       img: foto4,
       title: 'Rehabilitación Oral',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'Periodoncia es la rama de la odontología que se encarga de realizar los procedimientos para el acondicionamiento y restauración tanto en función cómo estética de los tejidos blandos de la boca para el proceso de colocación de un implante dental y son tratadas las enfermedad de la encía. El objetivo principal es evitar la pérdida de dientes y restaurar la salud bucal.'
+      info: 'Se encarga de la restauración bucal, devolviendo la función, estética y armonía oral reponiendo las piezas dentales perdidas, fracturadas o desgastadas. Mediante prótesis dentales, coronas, carillas, resinas, buscando siempre una buena oclusión, función y salud.'
     },
     {
       id: 3,
       img: foto3,
       title: 'Implantología',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'La prótesis bucal es la rama de la odontología que se encarga de devolver la función, anatomía, fonación y estética alteradas como consecuencia de la perdida de uno o mas dientes mientras que la implantología se  encarga del reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante.'
+      info: 'Área especializada en reponer los órganos dentales ausentes mediante el uso de implantes dentales, permitiendo al paciente continuar su vida con todos sus dientes garantizando una mejor salud bucal, masticación y estética sin desgastar dientes vecinos. '
     },
     {
       id: 4,
       img: foto5,
       title: 'Endodoncia',
       subtitle: 'Conoce a nuestras especialistas',
-      info: 'Endodoncia es la rama de la odontología que comprende la etiología, prevención, diagnostico, y tratamiento de las alteraciones patológicas de la pulpa dental y sus repercusiones en la región periapical.'
+      info: 'Especialidad encargada de diagnosticar, reparar, prevenir y tratar las enfermedades de los nervios y vasos sanguíneos en los conductos dentales, desinflamándolos para que no generen dolor y puedan durar por mas tiempo los dientes en boca.'
     },
     {
       id: 5,
       img: foto6,
       title: 'Ortodoncia',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'La ortodoncia es el área de la odontología que previene y corrige la malposición de los dientes, el crecimiento de los maxilares y favorece la estética facial y dental.'
+      info: 'Especialidad Odontológica encargada de prevenir, corregir, tratar la posición dental y de los maxilares con fines estéticos y funcionales.'
     },
     {
       id: 6,
       img: foto7,
       title: 'Odontopediatría',
       subtitle: 'Conoce a nuestro especialista',
-      info: 'Es la rama de la odontología encargada del manejo de la salud dental de los niños, etapa en la cual se puede prevenir y diagnosticar de forma temprana alguna patología o alteración dental, así como prevención de caries dentales, enfermedad periodontal y maloclusiones.'
+      info: 'Especialidad odontológica encargada de tratar a la población infantil y con necesidades especiales para enseñar, prevenir y tratar alguna patología dental o de los maxilares que pueda afectar el desarrollo, crecimiento, salud y estética de los niños en el futuro.'
     },
     {
       id: 7,
       img: foto2,
       title: 'Cirugía Oral',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'Especialidad de la Odontología que ofrece a la población, alternativas de tratamiento médico y quirúrgico a diferentes problemas de salud, entre los que se encuentran los defectos congénitos como el labio y el paladar fisurados, las disarmonías del desarrollo facial, los traumatismos de la región oral y maxilofacial, las alteraciones de la articulación temporomandibular, los quistes y los tumores odontogénicos, las infecciones de origen dental; utilizando para su manejo  distintos tratamientos quirúrgicos como Cirugía Ortognática, la reducción y fijación de fracturas del esqueleto facial, el uso de distractores osteogénicos, la reconstrucción del esqueleto facial mediante la toma y colocación de injertos intra y extraorales, la regeneración tisular guiada, a colocación de implantes dentales y cigomáticos, etc.'
+      info: 'Especialidad odontológica encargada de evaluar, diagnosticar y realizar procedimientos quirúrgicos dentales, maxilares y faciales, tales como extracciones de muelas del juicio, dientes supernumerarios, incluidos y quistes.'
     },
     {
       id: 8,
       img: foto10,
       title: 'Patología Bucal',
       subtitle: 'Conoce a nuestro especialista',
-      info: 'Atendemos casos de condición, lesiones y enfermedades que se desarrollan en la región Bucal y Maxilofacial. Realizamos cirugía de biopsia incisionales y exisionales para el diagnóstico y tratamiento específico.'
+      info: 'Especialidad Odontológica que evalúa, diagnostica y trata lesiones y enfermedades de los órganos dentarios, tejidos blandos, maxilar y mandíbula y su relación con problemas y enfermedades sistémicas, mediante biopsias y cirugías.'
     },
     {
       id: 9,
       img: foto12,
-      title: 'Laboratorio Dental',
+      title: 'CAD-CAM',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'El laboratorista dental se dedica a la fabricación de prótesis dentales fijas o removibles, como coronas dentales, coronas sobre pilares de implantes, pilares de implantes, dentaduras totales o parciales, etc. a partir de un tratamiento especifico indicado por el odontólogo, con la finalidad de ayudar a devolver la función al paciente o bien corregir la estética dental de dicho paciente.'
+      info: 'Diseño asistido por computadora de ultima tecnológica digital que cuenta con escáner intraoral, extraoral, fresadora de zirconia e impresiones 3D que facilitan y mejorar la precisión y calidad de nuestros tratamientos.'
     },
     {
       id: 10,
       img: foto13,
       title: 'Periodoncia',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'La periodoncia es la rama de la Odontología que trata las enfermedades de las encías y del hueso que sostiene los dientes. Y es que las enfermedades de las encías como la gingivitis y periodontitis son de las causas más comunes de pérdida de dientes, y su control es fundamental. '
+      info: 'Especialidad encargada del estudio y tratamiento de los tejidos de soporte dentales tales como: encías, ligamento periodontal, hueso alveolar y cemento radicular. Los cuales se ven afectados en enfermedades como gingivitis y periodontitis, que son la principal causa de perdida de dientes. '
     }
   ]
-  const visibleInfo = (e) => {
-    switch (e) {
-      case 1:
-        setVisibleA(!visibleA)
-        break
-      case 2:
-        setVisibleF(!visibleF)
-        break
-      case 3:
-        setVisibleC(!visibleC)
-        break
-      case 4:
-        setVisibleE(!visibleE)
-        break
-      case 5:
-        setVisibleI(!visibleI)
-        break
-      case 6:
-        setVisibleJ(!visibleJ)
-        break
-      case 7:
-        setVisibleG(!visibleG)
-        break
-      case 8:
-        setVisibleK(!visibleK)
-        break
-      case 9:
-        setVisibleB(!visibleB)
-        break
-      case 10:
-        setVisibleH(!visibleH)
-        break
-      case 11:
-        setVisibleD(!visibleD)
-        break
-      case 12:
-        setVisibleL(!visibleL)
-        break
-      default:
-        break
-    }
-  }
+
   const InfoModal = () => {
     // console.log(infoMU)
     return (
@@ -598,20 +490,12 @@ const SliderF = () => {
               >
                 {
                   slider[infoMU].infoSlider.map((info, j) => (
-                    <SplideSlide key={j}>
-                      <div className='item-amenidades'>
-                        <img src={info.photo} alt={`Foto de perfil de ${info.name}`} />
-                        <h2>{info.name}</h2>
-                        <CButton onClick={() => visibleInfo(info.id)}><span>{info.textV}</span></CButton>
-                        <CCollapse visible={info.visible}>
-                          <CCard className='mt-3'>
-                            <CCardBody>
-                              <ul className='list-details' dangerouslySetInnerHTML={{ __html: info.list }} />
-                            </CCardBody>
-                          </CCard>
-                        </CCollapse>
-                      </div>
-                    </SplideSlide>
+                    <CardSlider
+                      key={j}
+                      photo={info.photo}
+                      name={info.name}
+                      list={info.list}
+                    />
                   ))
                 }
               </Splide>

@@ -6,7 +6,7 @@ import Nosotros from './Pages/Nosotros'
 
 import Footer from './Components/Footer'
 import Botones from './Components/Botones'
-import AmenidadesHome from './Pages/AmenidadesHome'
+import Promociones from './Pages/Promociones'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route element={<Home />} path='/' />
         <Route element={<Nosotros />} path='/nosotros' />
-        <Route element={<AmenidadesHome />} path='/promociones' />
+        <Route element={<Promociones />} path='/promociones' />
       </Routes>
       <Botones />
       <Footer />
