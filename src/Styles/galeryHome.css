@@ -63,10 +63,6 @@ button {
   aspect-ratio: 1 / 1;
 }
 
-.item-galery:nth-last-child(3) img {
-  object-position: top;
-}
-
 .modal-atractions {
   width: 100%;
   height: 100vh;

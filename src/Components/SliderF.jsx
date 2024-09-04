@@ -27,7 +27,6 @@ import valeria from '../assets/valeria.png'
 import nora from '../assets/nora.png'
 import edgar from '../assets/edgar.png'
 import martha from '../assets/martha.png'
-import alonso from '../assets/alejandro.webp'
 import eduardo from '../assets/eduardo.png'
 import emiliano from '../assets/emiliano.webp'
 import { CardSlider } from './CardSlider'
@@ -173,18 +172,6 @@ const SliderF = () => {
           <li>Profesor activo en Licenciatura F.O. UNAM</li>`,
         },
         {
-          id: 5,
-          photo: alonso,
-          name: 'Alejandro Alonso Moctezuma',
-          list: `<li>Facultad de odontología UNAM</li>
-          <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 4833472</strong></li>
-          <li>División de estudios de posgrado UNAM</li>
-          <li>Especialidad en Cirugía oral y Maxilofacial <strong>Ced. Prof. 7876057</strong></li>
-          <li>Maestría en Ciencias <strong>Ced. Prof. 09698489</strong></li>
-          <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
-          <li>Profesor activo de Posgrado FO. UNAM</li>`,
-        },
-        {
           id: 6,
           photo: emiliano,
           name: 'Emiliano Jurado Castañeda',
@@ -263,18 +250,6 @@ const SliderF = () => {
     {
       id: 7,
       infoSlider: [
-        {
-          id: 5,
-          photo: alonso,
-          name: 'Alejandro Alonso Moctezuma',
-          list: `<li>Facultad de odontología UNAM</li>
-          <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 4833472</strong></li>
-          <li>División de estudios de posgrado UNAM</li>
-          <li>Especialidad en Cirugía oral y Maxilofacial <strong>Ced. Prof. 7876057</strong></li>
-          <li>Maestría en Ciencias <strong>Ced. Prof. 09698489</strong></li>
-          <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
-          <li>Profesor activo de Posgrado FO. UNAM</li>`,
-        },
         {
           id: 6,
           photo: emiliano,
@@ -402,11 +377,11 @@ const SliderF = () => {
       info: 'Especialidad odontológica encargada de evaluar, diagnosticar y realizar procedimientos quirúrgicos dentales, maxilares y faciales, tales como extracciones de muelas del juicio, dientes supernumerarios, incluidos y quistes.'
     },
     {
-      id: 8,
-      img: foto10,
-      title: 'Patología Bucal',
-      subtitle: 'Conoce a nuestro especialista',
-      info: 'Especialidad Odontológica que evalúa, diagnostica y trata lesiones y enfermedades de los órganos dentarios, tejidos blandos, maxilar y mandíbula y su relación con problemas y enfermedades sistémicas, mediante biopsias y cirugías.'
+      id: 10,
+      img: foto13,
+      title: 'Periodoncia',
+      subtitle: 'Conoce a nuestros especialistas',
+      info: 'Especialidad encargada del estudio y tratamiento de los tejidos de soporte dentales tales como: encías, ligamento periodontal, hueso alveolar y cemento radicular. Los cuales se ven afectados en enfermedades como gingivitis y periodontitis, que son la principal causa de perdida de dientes. '
     },
     {
       id: 9,
@@ -416,11 +391,11 @@ const SliderF = () => {
       info: 'Diseño asistido por computadora de ultima tecnológica digital que cuenta con escáner intraoral, extraoral, fresadora de zirconia e impresiones 3D que facilitan y mejorar la precisión y calidad de nuestros tratamientos.'
     },
     {
-      id: 10,
-      img: foto13,
-      title: 'Periodoncia',
-      subtitle: 'Conoce a nuestros especialistas',
-      info: 'Especialidad encargada del estudio y tratamiento de los tejidos de soporte dentales tales como: encías, ligamento periodontal, hueso alveolar y cemento radicular. Los cuales se ven afectados en enfermedades como gingivitis y periodontitis, que son la principal causa de perdida de dientes. '
+      id: 8,
+      img: foto10,
+      title: 'Patología Bucal',
+      subtitle: 'Conoce a nuestro especialista',
+      info: 'Especialidad Odontológica que evalúa, diagnostica y trata lesiones y enfermedades de los órganos dentarios, tejidos blandos, maxilar y mandíbula y su relación con problemas y enfermedades sistémicas, mediante biopsias y cirugías.'
     }
   ]
 

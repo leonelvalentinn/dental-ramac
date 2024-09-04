@@ -8,7 +8,6 @@ import area2 from "../assets/marcela.png";
 import area3 from "../assets/eduardo.png";
 import area4 from "../assets/edgar.png";
 import area5 from "../assets/liliana.png";
-import alejandro from "../assets/alejandro.png";
 import emiliano from "../assets/emiliano.png";
 import nora from "../assets/nora.png";
 import rodolfo from "../assets/rodolfo.png";
@@ -308,28 +307,6 @@ const Amenidades = () => {
                           <li>Especialidad en Endodoncia <strong>Ced. Prof. 09641210</strong></li>
                           <li>Maestría en Ciencias <strong>Ced. Prof. 12703822</strong></li>
                           <li>Profesor activo de Posgrado F.O. UNAM</li>
-                        </ul>
-                      </CCardBody>
-                    </CCard>
-                  </CCollapse>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className={`hideSwiper ${visibleSwiper5 ? "showSwiper" : ""} `}>
-                <div className="item-amenidades">
-                  <img src={alejandro} alt="" />
-                  <h2>Alejandro Alonso Moctezuma</h2>
-                  <CButton onClick={() => setVisibleE(!visibleE)}>Ver más</CButton>
-                  <CCollapse visible={visibleE}>
-                    <CCard className="mt-3">
-                      <CCardBody>
-                        <ul className="list-details">
-                          <li>Facultad de odontología UNAM</li>
-                          <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 4833472</strong></li>
-                          <li>División de estudios de posgrado UNAM</li>
-                          <li>Especialidad en Cirugía oral y Maxilofacial <strong>Ced. Prof. 7876057</strong></li>
-                          <li>Maestría en Ciencias <strong>Ced. Prof. 09698489</strong></li>
-                          <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
-                          <li>Profesor activo de Posgrado FO. UNAM</li>
                         </ul>
                       </CCardBody>
                     </CCard>

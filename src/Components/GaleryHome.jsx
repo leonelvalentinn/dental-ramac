@@ -22,7 +22,6 @@ import marcela from "../assets/marcela.webp";
 import eduardo from "../assets/eduardo.webp";
 import edgar from "../assets/edgar.webp";
 import liliana from "../assets/liliana.webp";
-import alejandro from "../assets/alejandro.webp";
 import emiliano from "../assets/emiliano.webp";
 import nora from "../assets/nora.webp";
 import rodolfo from "../assets/rodolfo.webp";
@@ -157,23 +156,6 @@ const GaleryHome = () => {
       title: "Odontopediatría",
       subtitle: "Conoce a nuestro especialista",
       info: "Es la rama de la odontología encargada del manejo de la salud dental de los niños, etapa en la cual se puede prevenir y diagnosticar de forma temprana alguna patología o alteración dental, así como prevención de caries dentales, enfermedad periodontal y maloclusiones.",
-    },
-    {
-      id: 7,
-      name: "Alejandro Alonso Moctezuma",
-      photo: alejandro,
-      details: `<li>Facultad de odontología UNAM</li>
-      <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 4833472</strong></li>
-      <li>División de estudios de posgrado UNAM</li>
-      <li>Especialidad en Cirugía oral y Maxilofacial <strong>Ced. Prof. 7876057</strong></li>
-      <li>Maestría en Ciencias <strong>Ced. Prof. 09698489</strong></li>
-      <li>Doctorado en Ciencias <strong>Ced. Prof. 12901554</strong></li>
-      <li>Profesor activo de Posgrado FO. UNAM</li>`,
-      specialist: ``,
-      img: "",
-      title: "Cirugía Oral",
-      subtitle: "Conoce a nuestro especialista",
-      info: "Especialidad de la Odontología que ofrece a la población, alternativas de tratamiento médico y quirúrgico a diferentes problemas de salud, entre los que se encuentran los defectos congénitos como el labio y el paladar fisurados, las disarmonías del desarrollo facial, los traumatismos de la región oral y maxilofacial, las alteraciones de la articulación temporomandibular, los quistes y los tumores odontogénicos, las infecciones de origen dental; utilizando para su manejo  distintos tratamientos quirúrgicos como Cirugía Ortognática, la reducción y fijación de fracturas del esqueleto facial, el uso de distractores osteogénicos, la reconstrucción del esqueleto facial mediante la toma y colocación de injertos intra y extraorales, la regeneración tisular guiada, a colocación de implantes dentales y cigomáticos, etc.",
     },
     {
       id: 8,
