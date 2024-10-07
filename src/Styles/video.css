@@ -9,7 +9,7 @@
     height: 100vh;
     display: block;
   }
-  video {
+  .image {
     position: absolute;
     left: 0;
     top: 0;
@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0e335296;
   }
   .container-video-text {
     text-align: center;

@@ -1,26 +1,20 @@
 // import React from 'react';
 import '../Styles/video.css'
-import Video from '../assets/background-1.mp4'
-import Video1 from '../assets/background-mobile.mp4'
+import Video from '../assets/2149206227.webp'
+import Video1 from '../assets/2149206227.webp'
 import ButtonContact from './ButtonContact'
 
 const VideoGround = () => {
   return (
     <div className='container-video'>
-      <video
+      <img
         src={Video}
-        className='video-escritorio'
-        autoPlay
-        loop
-        muted
+        className='video-escritorio image'
       />
 
-      <video
+      <img
         src={Video1}
-        className='video-mobile'
-        autoPlay
-        loop
-        muted
+        className='video-mobile image'
       />
 
       <div className='video-text'>

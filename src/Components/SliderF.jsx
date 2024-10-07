@@ -57,7 +57,7 @@ const SliderF = () => {
           photo: rodolfo,
           name: 'Rodolfo Uribe Castillo',
           list: `<li>Universidad del Magdalena - Colombia</li>
-          <li>Odontólogo <strong>Ced. Prof. 1.082.985.066</strong></li>
+          <li>Odontólogo <strong>Ced. Prof. 14285732</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Ortodoncia y ortopedia maxilofacial</li>`,
         },
@@ -224,7 +224,7 @@ const SliderF = () => {
           photo: rodolfo,
           name: 'Rodolfo Uribe Castillo',
           list: `<li>Universidad del Magdalena - Colombia</li>
-          <li>Odontólogo <strong>Ced. Prof. 1.082.985.066</strong></li>
+          <li>Odontólogo <strong>Ced. Prof. 14285732</strong></li>
           <li>División de estudios de posgrado UNAM</li>
           <li>Ortodoncia y ortopedia maxilofacial</li>`,
         }
@@ -266,17 +266,17 @@ const SliderF = () => {
     {
       id: 8,
       infoSlider: [
-        {
-          id: 6,
-          photo: emiliano,
-          name: 'Emiliano Jurado Castañeda',
-          list: `<li>Facultad de odontología UNAM</li>
-          <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 6257690</strong></li>
-          <li>División de estudios de posgrado UNAM </li>
-          <li>Especialista en patología bucal <strong>Ced. Prof. 10590811</strong></li>
-          <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
-          <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
-        }
+        // {
+        //   id: 6,
+        //   photo: emiliano,
+        //   name: 'Emiliano Jurado Castañeda',
+        //   list: `<li>Facultad de odontología UNAM</li>
+        //   <li>Lic. en Cirujano Dentista <strong>Ced. Prof. 6257690</strong></li>
+        //   <li>División de estudios de posgrado UNAM </li>
+        //   <li>Especialista en patología bucal <strong>Ced. Prof. 10590811</strong></li>
+        //   <li>Maestría en ciencias medicas <strong>Ced. Prof. 11126175</strong></li>
+        //   <li>Profesor activo de Posgrado Y Licenciatura F.O. UNAM</li>`,
+        // }
       ]
     },
     {
@@ -303,15 +303,15 @@ const SliderF = () => {
     {
       id: 11,
       infoSlider: [
-        {
-          id: 2,
-          photo: martha,
-          name: 'Martha G. Islas García',
-          list: `<li>Facultad de Estudios Superiores Zaragoza. UNAM.</li>
-          <li>Licenciatura en Cirujana Dentista. <strong>Ced. Prof. 6991412</strong></li>
-          <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
-          <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
-        },
+        // {
+        //   id: 2,
+        //   photo: martha,
+        //   name: 'Martha G. Islas García',
+        //   list: `<li>Facultad de Estudios Superiores Zaragoza. UNAM.</li>
+        //   <li>Licenciatura en Cirujana Dentista. <strong>Ced. Prof. 6991412</strong></li>
+        //   <li>Diplomado de Actualización Profesional en el Manejo de Tejidos Periimplantarios en Cirugía Bucal y Periodontal.</li>
+        //   <li>Diplomado de Actualización Profesional en Terapia Periodontal</li>`,
+        // },
         {
           id: 6,
           photo: emiliano,
@@ -332,14 +332,14 @@ const SliderF = () => {
       img: foto1,
       title: 'Odontología Preventiva',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'Esta área busca anticiparse a la aparición de dolor o molestias que puedan afectar los dientes, encías o tejidos de soporte como, por ejemplo, infecciones de encías, pérdida de piezas dentales, sensibilidad, caries y otras. Garantizando de este modo una salud bucal a largo plazo.'
+      info: 'Esta área busca anticiparse a la aparición de dolor o molestias que puedan afectar los dientes, encía o tejidos de soporte como, infecciones, pérdida de piezas dentales, sensibilidad, caries y otras. Garantizando de este modo una salud bucal a largo plazo.'
     },
     {
       id: 2,
       img: foto4,
       title: 'Rehabilitación Oral',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'Se encarga de la restauración bucal, devolviendo la función, estética y armonía oral reponiendo las piezas dentales perdidas, fracturadas o desgastadas. Mediante prótesis dentales, coronas, carillas, resinas, buscando siempre una buena oclusión, función y salud.'
+      info: 'Se encarga de la restauración bucal, devolviendo la función, estética y armonía oral, reemplazando las piezas dentales perdidas, fracturadas o desgastadas. Mediante prótesis dentales, coronas, carillas, resinas, buscando siempre una buena oclusión, función y salud.'
     },
     {
       id: 3,
@@ -372,12 +372,12 @@ const SliderF = () => {
     {
       id: 7,
       img: foto2,
-      title: 'Cirugía Oral',
+      title: 'Cirugía Maxilofacial',
       subtitle: 'Conoce a nuestros especialistas',
       info: 'Especialidad odontológica encargada de evaluar, diagnosticar y realizar procedimientos quirúrgicos dentales, maxilares y faciales, tales como extracciones de muelas del juicio, dientes supernumerarios, incluidos y quistes.'
     },
     {
-      id: 10,
+      id: 8,
       img: foto13,
       title: 'Periodoncia',
       subtitle: 'Conoce a nuestros especialistas',
@@ -388,10 +388,10 @@ const SliderF = () => {
       img: foto12,
       title: 'CAD-CAM',
       subtitle: 'Conoce a nuestros especialistas',
-      info: 'Diseño asistido por computadora de ultima tecnológica digital que cuenta con escáner intraoral, extraoral, fresadora de zirconia e impresiones 3D que facilitan y mejorar la precisión y calidad de nuestros tratamientos.'
+      info: 'Diseño asistido por computadora de ultima tecnológica digital que cuenta con escáner intraoral, extraoral, fresadora de zirconia e impresiones 3D que facilitan y mejoran la precisión y calidad de nuestros tratamientos.'
     },
     {
-      id: 8,
+      id: 10,
       img: foto10,
       title: 'Patología Bucal',
       subtitle: 'Conoce a nuestro especialista',
@@ -412,7 +412,7 @@ const SliderF = () => {
   function openModal (e) {
     setIsModal(true)
     idRender = e.target.id
-    if (idRender === '6' || idRender === '8') {
+    if (idRender === '6' || idRender === '8' || idRender === '7' || idRender === '10') {
       setSlides(1)
     } else {
       setSlides(2)
